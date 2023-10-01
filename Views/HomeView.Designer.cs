@@ -1,6 +1,6 @@
 ﻿namespace inventory_management_system_kap.Views
 {
-    partial class Home
+    partial class HomeView
     {
         /// <summary>
         /// Required designer variable.

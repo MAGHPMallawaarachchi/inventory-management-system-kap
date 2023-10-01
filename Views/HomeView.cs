@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace inventory_management_system_kap.Views
 {
-    public partial class Home : Form
+    public partial class HomeView : Form
     {
-        public Home()
+        public HomeView()
         {
             InitializeComponent();
         }
