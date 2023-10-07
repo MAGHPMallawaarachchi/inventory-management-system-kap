@@ -36,22 +36,22 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.outOfStock = new System.Windows.Forms.Label();
+            this.lblOutOfStock = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lowInStock = new System.Windows.Forms.Label();
+            this.lblLowInStock = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.categories = new System.Windows.Forms.Label();
+            this.lblCategories = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.items = new System.Windows.Forms.Label();
             this.lblItems = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblInventorySummary = new System.Windows.Forms.Label();
@@ -59,9 +59,9 @@
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.btnFilter = new Guna.UI.WinForms.GunaButton();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblItemsHeading = new System.Windows.Forms.Label();
             this.btnAddItem = new Guna.UI.WinForms.GunaButton();
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.dgvItems = new Guna.UI.WinForms.GunaDataGridView();
             this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +72,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnNext = new Guna.UI.WinForms.GunaButton();
             this.btnPrevious = new Guna.UI.WinForms.GunaButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblPageNumber = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlInventorySummary.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -92,7 +92,7 @@
             this.pnlItems.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -185,8 +185,8 @@
             // 
             this.tableLayoutPanel12.ColumnCount = 1;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label7, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.outOfStock, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.lblOutOfStock, 0, 1);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(64, 0);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
@@ -196,30 +196,30 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(176, 53);
             this.tableLayoutPanel12.TabIndex = 2;
             // 
-            // label6
+            // outOfStock
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.label6.Location = new System.Drawing.Point(2, 5);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 15);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Out Of Stock";
+            this.outOfStock.AutoSize = true;
+            this.outOfStock.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outOfStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.outOfStock.Location = new System.Drawing.Point(2, 5);
+            this.outOfStock.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
+            this.outOfStock.Name = "outOfStock";
+            this.outOfStock.Size = new System.Drawing.Size(88, 15);
+            this.outOfStock.TabIndex = 2;
+            this.outOfStock.Text = "Out Of Stock";
             // 
-            // label7
+            // lblOutOfStock
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Inter Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(0, 20);
-            this.label7.Margin = new System.Windows.Forms.Padding(0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 32);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "10";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblOutOfStock.AutoSize = true;
+            this.lblOutOfStock.Font = new System.Drawing.Font("Inter Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutOfStock.ForeColor = System.Drawing.Color.White;
+            this.lblOutOfStock.Location = new System.Drawing.Point(0, 20);
+            this.lblOutOfStock.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOutOfStock.Name = "lblOutOfStock";
+            this.lblOutOfStock.Size = new System.Drawing.Size(45, 32);
+            this.lblOutOfStock.TabIndex = 3;
+            this.lblOutOfStock.Text = "10";
+            this.lblOutOfStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox4
             // 
@@ -253,8 +253,8 @@
             // 
             this.tableLayoutPanel11.ColumnCount = 1;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label5, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.lowInStock, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.lblLowInStock, 0, 1);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(64, 0);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -264,30 +264,30 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(176, 53);
             this.tableLayoutPanel11.TabIndex = 2;
             // 
-            // label4
+            // lowInStock
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.label4.Location = new System.Drawing.Point(2, 5);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 15);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Low in Stock";
+            this.lowInStock.AutoSize = true;
+            this.lowInStock.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowInStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lowInStock.Location = new System.Drawing.Point(2, 5);
+            this.lowInStock.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
+            this.lowInStock.Name = "lowInStock";
+            this.lowInStock.Size = new System.Drawing.Size(87, 15);
+            this.lowInStock.TabIndex = 2;
+            this.lowInStock.Text = "Low in Stock";
             // 
-            // label5
+            // lblLowInStock
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Inter Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(0, 20);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 32);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "15";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLowInStock.AutoSize = true;
+            this.lblLowInStock.Font = new System.Drawing.Font("Inter Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLowInStock.ForeColor = System.Drawing.Color.White;
+            this.lblLowInStock.Location = new System.Drawing.Point(0, 20);
+            this.lblLowInStock.Margin = new System.Windows.Forms.Padding(0);
+            this.lblLowInStock.Name = "lblLowInStock";
+            this.lblLowInStock.Size = new System.Drawing.Size(45, 32);
+            this.lblLowInStock.TabIndex = 3;
+            this.lblLowInStock.Text = "15";
+            this.lblLowInStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox2
             // 
@@ -321,8 +321,8 @@
             // 
             this.tableLayoutPanel10.ColumnCount = 1;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.categories, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.lblCategories, 0, 1);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(64, 0);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -332,30 +332,30 @@
             this.tableLayoutPanel10.Size = new System.Drawing.Size(176, 53);
             this.tableLayoutPanel10.TabIndex = 2;
             // 
-            // label2
+            // categories
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.label2.Location = new System.Drawing.Point(2, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Categories";
+            this.categories.AutoSize = true;
+            this.categories.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.categories.Location = new System.Drawing.Point(2, 5);
+            this.categories.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
+            this.categories.Name = "categories";
+            this.categories.Size = new System.Drawing.Size(75, 15);
+            this.categories.TabIndex = 2;
+            this.categories.Text = "Categories";
             // 
-            // label3
+            // lblCategories
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Inter Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(0, 20);
-            this.label3.Margin = new System.Windows.Forms.Padding(0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 32);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "12";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCategories.AutoSize = true;
+            this.lblCategories.Font = new System.Drawing.Font("Inter Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategories.ForeColor = System.Drawing.Color.White;
+            this.lblCategories.Location = new System.Drawing.Point(0, 20);
+            this.lblCategories.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCategories.Name = "lblCategories";
+            this.lblCategories.Size = new System.Drawing.Size(45, 32);
+            this.lblCategories.TabIndex = 3;
+            this.lblCategories.Text = "12";
+            this.lblCategories.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox3
             // 
@@ -389,7 +389,7 @@
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.label9, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.items, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.lblItems, 0, 1);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(64, 0);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
@@ -400,17 +400,17 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(176, 53);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
-            // label9
+            // items
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.label9.Location = new System.Drawing.Point(2, 5);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 15);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Items";
+            this.items.AutoSize = true;
+            this.items.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.items.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.items.Location = new System.Drawing.Point(2, 5);
+            this.items.Margin = new System.Windows.Forms.Padding(2, 5, 0, 0);
+            this.items.Name = "items";
+            this.items.Size = new System.Drawing.Size(41, 15);
+            this.items.TabIndex = 2;
+            this.items.Text = "Items";
             // 
             // lblItems
             // 
@@ -454,10 +454,10 @@
             this.pnlItems.Controls.Add(this.tableLayoutPanel13);
             this.pnlItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlItems.Location = new System.Drawing.Point(20, 155);
-            this.pnlItems.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.pnlItems.Margin = new System.Windows.Forms.Padding(0, 20, 0, 10);
             this.pnlItems.Name = "pnlItems";
             this.pnlItems.Padding = new System.Windows.Forms.Padding(15);
-            this.pnlItems.Size = new System.Drawing.Size(1014, 414);
+            this.pnlItems.Size = new System.Drawing.Size(1014, 404);
             this.pnlItems.TabIndex = 1;
             // 
             // tableLayoutPanel13
@@ -466,7 +466,7 @@
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel13.Controls.Add(this.tableLayoutPanel14, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.gunaDataGridView1, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(this.dgvItems, 0, 1);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(15, 15);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
@@ -474,7 +474,7 @@
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.114583F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.88541F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(984, 384);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(984, 374);
             this.tableLayoutPanel13.TabIndex = 2;
             // 
             // tableLayoutPanel14
@@ -486,14 +486,14 @@
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.077709F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel14.Controls.Add(this.btnFilter, 3, 0);
-            this.tableLayoutPanel14.Controls.Add(this.label8, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.lblItemsHeading, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.btnAddItem, 4, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(978, 29);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(978, 28);
             this.tableLayoutPanel14.TabIndex = 1;
             // 
             // btnFilter
@@ -518,24 +518,24 @@
             this.btnFilter.OnHoverImage = null;
             this.btnFilter.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.btnFilter.Radius = 6;
-            this.btnFilter.Size = new System.Drawing.Size(73, 23);
+            this.btnFilter.Size = new System.Drawing.Size(73, 22);
             this.btnFilter.TabIndex = 12;
             this.btnFilter.Text = "Filter";
             this.btnFilter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnFilter.TextOffsetX = 3;
             // 
-            // label8
+            // lblItemsHeading
             // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Inter Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.label8.Location = new System.Drawing.Point(3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 29);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Items";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblItemsHeading.AutoSize = true;
+            this.lblItemsHeading.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblItemsHeading.Font = new System.Drawing.Font("Inter Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItemsHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.lblItemsHeading.Location = new System.Drawing.Point(3, 0);
+            this.lblItemsHeading.Name = "lblItemsHeading";
+            this.lblItemsHeading.Size = new System.Drawing.Size(91, 28);
+            this.lblItemsHeading.TabIndex = 2;
+            this.lblItemsHeading.Text = "Items";
+            this.lblItemsHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnAddItem
             // 
@@ -559,19 +559,23 @@
             this.btnAddItem.OnHoverImage = null;
             this.btnAddItem.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
             this.btnAddItem.Radius = 6;
-            this.btnAddItem.Size = new System.Drawing.Size(94, 23);
+            this.btnAddItem.Size = new System.Drawing.Size(94, 22);
             this.btnAddItem.TabIndex = 9;
             this.btnAddItem.Text = "Add Item";
             this.btnAddItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnAddItem.TextOffsetX = 3;
             // 
-            // gunaDataGridView1
+            // dgvItems
             // 
-            this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvItems.AllowUserToAddRows = false;
+            this.dgvItems.AllowUserToDeleteRows = false;
+            this.dgvItems.AllowUserToResizeColumns = false;
+            this.dgvItems.AllowUserToResizeRows = false;
+            this.dgvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvItems.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.dgvItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvItems.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvItems.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -579,9 +583,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gunaDataGridView1.ColumnHeadersHeight = 19;
-            this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvItems.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvItems.ColumnHeadersHeight = 20;
+            this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.number,
             this.partNumber,
             this.brand,
@@ -596,38 +600,43 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaDataGridView1.EnableHeadersVisualStyles = false;
-            this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(3, 38);
-            this.gunaDataGridView1.Name = "gunaDataGridView1";
-            this.gunaDataGridView1.RowHeadersVisible = false;
-            this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(978, 343);
-            this.gunaDataGridView1.TabIndex = 2;
-            this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Dark;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 19;
-            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.dgvItems.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvItems.EnableHeadersVisualStyles = false;
+            this.dgvItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.dgvItems.Location = new System.Drawing.Point(3, 54);
+            this.dgvItems.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
+            this.dgvItems.Name = "dgvItems";
+            this.dgvItems.RowHeadersVisible = false;
+            this.dgvItems.RowTemplate.Height = 30;
+            this.dgvItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvItems.ShowCellErrors = false;
+            this.dgvItems.ShowEditingIcon = false;
+            this.dgvItems.ShowRowErrors = false;
+            this.dgvItems.Size = new System.Drawing.Size(978, 317);
+            this.dgvItems.TabIndex = 2;
+            this.dgvItems.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Dark;
+            this.dgvItems.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Empty;
+            this.dgvItems.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvItems.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvItems.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvItems.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvItems.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.dgvItems.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.dgvItems.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.dgvItems.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvItems.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvItems.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.dgvItems.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvItems.ThemeStyle.HeaderStyle.Height = 20;
+            this.dgvItems.ThemeStyle.ReadOnly = false;
+            this.dgvItems.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.dgvItems.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvItems.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvItems.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.dgvItems.ThemeStyle.RowsStyle.Height = 30;
+            this.dgvItems.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.dgvItems.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             // 
             // number
             // 
@@ -681,7 +690,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Controls.Add(this.btnNext, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnPrevious, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblPageNumber, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(23, 572);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -746,18 +755,18 @@
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label1
+            // lblPageNumber
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.label1.Location = new System.Drawing.Point(103, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(800, 36);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "1 Of 10";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPageNumber.AutoSize = true;
+            this.lblPageNumber.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPageNumber.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPageNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblPageNumber.Location = new System.Drawing.Point(103, 0);
+            this.lblPageNumber.Name = "lblPageNumber";
+            this.lblPageNumber.Size = new System.Drawing.Size(800, 36);
+            this.lblPageNumber.TabIndex = 6;
+            this.lblPageNumber.Text = "1 Of 10";
+            this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InventoryView
             // 
@@ -795,7 +804,7 @@
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -808,38 +817,38 @@
         private System.Windows.Forms.Panel pnlInventorySummary;
         private System.Windows.Forms.Panel pnlItems;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPageNumber;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label lblInventorySummary;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label items;
         private System.Windows.Forms.Label lblItems;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label outOfStock;
+        private System.Windows.Forms.Label lblOutOfStock;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lowInStock;
+        private System.Windows.Forms.Label lblLowInStock;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label categories;
+        private System.Windows.Forms.Label lblCategories;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblItemsHeading;
         private Guna.UI.WinForms.GunaButton btnPrevious;
         private Guna.UI.WinForms.GunaButton btnAddItem;
         private Guna.UI.WinForms.GunaButton btnNext;
         private Guna.UI.WinForms.GunaButton btnFilter;
-        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
+        private Guna.UI.WinForms.GunaDataGridView dgvItems;
         private System.Windows.Forms.DataGridViewTextBoxColumn number;
         private System.Windows.Forms.DataGridViewTextBoxColumn partNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn brand;
