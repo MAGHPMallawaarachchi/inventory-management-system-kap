@@ -38,29 +38,23 @@
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.outOfStock = new System.Windows.Forms.Label();
             this.lblOutOfStock = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.lowInStock = new System.Windows.Forms.Label();
             this.lblLowInStock = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.categories = new System.Windows.Forms.Label();
             this.lblCategories = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.items = new System.Windows.Forms.Label();
             this.lblItems = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblInventorySummary = new System.Windows.Forms.Label();
             this.pnlItems = new System.Windows.Forms.Panel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnFilter = new Guna.UI.WinForms.GunaButton();
             this.lblItemsHeading = new System.Windows.Forms.Label();
-            this.btnAddItem = new Guna.UI.WinForms.GunaButton();
             this.dgvItems = new Guna.UI.WinForms.GunaDataGridView();
             this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,27 +67,40 @@
             this.btnNext = new Guna.UI.WinForms.GunaButton();
             this.btnPrevious = new Guna.UI.WinForms.GunaButton();
             this.lblPageNumber = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnFilter = new Guna.UI.WinForms.GunaButton();
+            this.btnAddItem = new Guna.UI.WinForms.GunaButton();
+            this.pnlSearchBar = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.txtSeacrhBar = new Guna.UI.WinForms.GunaTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlInventorySummary.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlItems.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlSearchBar.SuspendLayout();
+            this.tableLayoutPanel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -221,18 +228,6 @@
             this.lblOutOfStock.Text = "10";
             this.lblOutOfStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::inventory_management_system_kap.Properties.Resources.out_of_stock;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 53);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 2;
@@ -288,18 +283,6 @@
             this.lblLowInStock.TabIndex = 3;
             this.lblLowInStock.Text = "15";
             this.lblLowInStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::inventory_management_system_kap.Properties.Resources.low_in_stock;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 53);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // tableLayoutPanel8
             // 
@@ -357,18 +340,6 @@
             this.lblCategories.Text = "12";
             this.lblCategories.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::inventory_management_system_kap.Properties.Resources.categories;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 53);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
@@ -425,18 +396,6 @@
             this.lblItems.Text = "786";
             this.lblItems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::inventory_management_system_kap.Properties.Resources.items;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblInventorySummary
             // 
             this.lblInventorySummary.AutoSize = true;
@@ -471,8 +430,8 @@
             this.tableLayoutPanel13.Location = new System.Drawing.Point(15, 15);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 2;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.114583F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.88541F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.754011F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.24599F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel13.Size = new System.Drawing.Size(984, 374);
             this.tableLayoutPanel13.TabIndex = 2;
@@ -488,41 +447,15 @@
             this.tableLayoutPanel14.Controls.Add(this.btnFilter, 3, 0);
             this.tableLayoutPanel14.Controls.Add(this.lblItemsHeading, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.btnAddItem, 4, 0);
+            this.tableLayoutPanel14.Controls.Add(this.pnlSearchBar, 2, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(978, 28);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(984, 29);
             this.tableLayoutPanel14.TabIndex = 1;
-            // 
-            // btnFilter
-            // 
-            this.btnFilter.AnimationHoverSpeed = 0.07F;
-            this.btnFilter.AnimationSpeed = 0.03F;
-            this.btnFilter.BackColor = System.Drawing.Color.Transparent;
-            this.btnFilter.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFilter.FocusedColor = System.Drawing.Color.Empty;
-            this.btnFilter.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilter.ForeColor = System.Drawing.Color.White;
-            this.btnFilter.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
-            this.btnFilter.ImageSize = new System.Drawing.Size(12, 12);
-            this.btnFilter.Location = new System.Drawing.Point(802, 3);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnFilter.OnHoverImage = null;
-            this.btnFilter.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.Radius = 6;
-            this.btnFilter.Size = new System.Drawing.Size(73, 22);
-            this.btnFilter.TabIndex = 12;
-            this.btnFilter.Text = "Filter";
-            this.btnFilter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnFilter.TextOffsetX = 3;
             // 
             // lblItemsHeading
             // 
@@ -532,38 +465,10 @@
             this.lblItemsHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.lblItemsHeading.Location = new System.Drawing.Point(3, 0);
             this.lblItemsHeading.Name = "lblItemsHeading";
-            this.lblItemsHeading.Size = new System.Drawing.Size(91, 28);
+            this.lblItemsHeading.Size = new System.Drawing.Size(92, 29);
             this.lblItemsHeading.TabIndex = 2;
             this.lblItemsHeading.Text = "Items";
             this.lblItemsHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.AnimationHoverSpeed = 0.07F;
-            this.btnAddItem.AnimationSpeed = 0.03F;
-            this.btnAddItem.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddItem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddItem.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAddItem.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItem.ForeColor = System.Drawing.Color.White;
-            this.btnAddItem.Image = global::inventory_management_system_kap.Properties.Resources.Add;
-            this.btnAddItem.ImageSize = new System.Drawing.Size(12, 12);
-            this.btnAddItem.Location = new System.Drawing.Point(881, 3);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAddItem.OnHoverImage = null;
-            this.btnAddItem.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.Radius = 6;
-            this.btnAddItem.Size = new System.Drawing.Size(94, 22);
-            this.btnAddItem.TabIndex = 9;
-            this.btnAddItem.Text = "Add Item";
-            this.btnAddItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnAddItem.TextOffsetX = 3;
             // 
             // dgvItems
             // 
@@ -585,6 +490,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvItems.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvItems.ColumnHeadersHeight = 20;
+            this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.number,
             this.partNumber,
@@ -604,7 +510,7 @@
             this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvItems.EnableHeadersVisualStyles = false;
             this.dgvItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.dgvItems.Location = new System.Drawing.Point(3, 54);
+            this.dgvItems.Location = new System.Drawing.Point(3, 49);
             this.dgvItems.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.RowHeadersVisible = false;
@@ -613,7 +519,7 @@
             this.dgvItems.ShowCellErrors = false;
             this.dgvItems.ShowEditingIcon = false;
             this.dgvItems.ShowRowErrors = false;
-            this.dgvItems.Size = new System.Drawing.Size(978, 317);
+            this.dgvItems.Size = new System.Drawing.Size(978, 322);
             this.dgvItems.TabIndex = 2;
             this.dgvItems.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Dark;
             this.dgvItems.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Empty;
@@ -627,7 +533,7 @@
             this.dgvItems.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvItems.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvItems.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.dgvItems.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvItems.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvItems.ThemeStyle.HeaderStyle.Height = 20;
             this.dgvItems.ThemeStyle.ReadOnly = false;
             this.dgvItems.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
@@ -707,6 +613,7 @@
             this.btnNext.BaseColor = System.Drawing.Color.Transparent;
             this.btnNext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.btnNext.BorderSize = 1;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNext.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNext.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNext.FocusedColor = System.Drawing.Color.Empty;
@@ -735,6 +642,7 @@
             this.btnPrevious.BaseColor = System.Drawing.Color.Transparent;
             this.btnPrevious.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.btnPrevious.BorderSize = 1;
+            this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrevious.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPrevious.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPrevious.FocusedColor = System.Drawing.Color.Empty;
@@ -768,6 +676,176 @@
             this.lblPageNumber.Text = "1 Of 10";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::inventory_management_system_kap.Properties.Resources.out_of_stock;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::inventory_management_system_kap.Properties.Resources.low_in_stock;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::inventory_management_system_kap.Properties.Resources.categories;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::inventory_management_system_kap.Properties.Resources.items;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.AnimationHoverSpeed = 0.07F;
+            this.btnFilter.AnimationSpeed = 0.03F;
+            this.btnFilter.BackColor = System.Drawing.Color.Transparent;
+            this.btnFilter.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFilter.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnFilter.FocusedColor = System.Drawing.Color.Empty;
+            this.btnFilter.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilter.ForeColor = System.Drawing.Color.White;
+            this.btnFilter.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
+            this.btnFilter.ImageSize = new System.Drawing.Size(12, 12);
+            this.btnFilter.Location = new System.Drawing.Point(808, 0);
+            this.btnFilter.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnFilter.OnHoverImage = null;
+            this.btnFilter.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.Radius = 6;
+            this.btnFilter.Size = new System.Drawing.Size(73, 29);
+            this.btnFilter.TabIndex = 12;
+            this.btnFilter.Text = "Filter";
+            this.btnFilter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnFilter.TextOffsetX = 3;
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.AnimationHoverSpeed = 0.07F;
+            this.btnAddItem.AnimationSpeed = 0.03F;
+            this.btnAddItem.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddItem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddItem.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddItem.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAddItem.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddItem.ForeColor = System.Drawing.Color.White;
+            this.btnAddItem.Image = global::inventory_management_system_kap.Properties.Resources.Add;
+            this.btnAddItem.ImageSize = new System.Drawing.Size(12, 12);
+            this.btnAddItem.Location = new System.Drawing.Point(887, 0);
+            this.btnAddItem.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAddItem.OnHoverImage = null;
+            this.btnAddItem.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.Radius = 6;
+            this.btnAddItem.Size = new System.Drawing.Size(94, 29);
+            this.btnAddItem.TabIndex = 9;
+            this.btnAddItem.Text = "Add Item";
+            this.btnAddItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnAddItem.TextOffsetX = 3;
+            // 
+            // pnlSearchBar
+            // 
+            this.pnlSearchBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.pnlSearchBar.Controls.Add(this.tableLayoutPanel15);
+            this.pnlSearchBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSearchBar.Location = new System.Drawing.Point(495, 0);
+            this.pnlSearchBar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.pnlSearchBar.Name = "pnlSearchBar";
+            this.pnlSearchBar.Size = new System.Drawing.Size(307, 29);
+            this.pnlSearchBar.TabIndex = 13;
+            // 
+            // tableLayoutPanel15
+            // 
+            this.tableLayoutPanel15.ColumnCount = 2;
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.37785F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.62215F));
+            this.tableLayoutPanel15.Controls.Add(this.txtSeacrhBar, 1, 0);
+            this.tableLayoutPanel15.Controls.Add(this.pictureBox5, 0, 0);
+            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.tableLayoutPanel15.RowCount = 1;
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(307, 29);
+            this.tableLayoutPanel15.TabIndex = 0;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::inventory_management_system_kap.Properties.Resources.search;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(38, 29);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // txtSeacrhBar
+            // 
+            this.txtSeacrhBar.AllowDrop = true;
+            this.txtSeacrhBar.BackColor = System.Drawing.Color.Transparent;
+            this.txtSeacrhBar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSeacrhBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSeacrhBar.BorderSize = 1;
+            this.txtSeacrhBar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSeacrhBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSeacrhBar.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSeacrhBar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSeacrhBar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.txtSeacrhBar.Font = new System.Drawing.Font("Inter", 10F);
+            this.txtSeacrhBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.txtSeacrhBar.Location = new System.Drawing.Point(41, 0);
+            this.txtSeacrhBar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.txtSeacrhBar.Name = "txtSeacrhBar";
+            this.txtSeacrhBar.PasswordChar = '\0';
+            this.txtSeacrhBar.SelectedText = "";
+            this.txtSeacrhBar.Size = new System.Drawing.Size(263, 29);
+            this.txtSeacrhBar.TabIndex = 16;
+            this.txtSeacrhBar.Text = "Search here...";
+            // 
             // InventoryView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -787,19 +865,15 @@
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlItems.ResumeLayout(false);
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel14.ResumeLayout(false);
@@ -807,6 +881,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlSearchBar.ResumeLayout(false);
+            this.tableLayoutPanel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -856,5 +937,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn qtySold;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitPrice;
         private System.Windows.Forms.DataGridViewImageColumn availability;
+        private System.Windows.Forms.Panel pnlSearchBar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
+        private Guna.UI.WinForms.GunaTextBox txtSeacrhBar;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

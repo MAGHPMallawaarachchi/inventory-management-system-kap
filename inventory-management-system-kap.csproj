@@ -167,5 +167,8 @@
   <ItemGroup>
     <None Include="assets\icons\Filter.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\search.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
