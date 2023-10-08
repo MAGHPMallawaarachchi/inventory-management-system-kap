@@ -118,6 +118,9 @@
     <EmbeddedResource Include="Views\InventoryView.resx">
       <DependentUpon>InventoryView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\InventoryView.resx">
+      <DependentUpon>ItemDetailsView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Models\.gitkeep" />
     <None Include="packages.config" />
     <None Include="Presenters\.gitkeep" />
