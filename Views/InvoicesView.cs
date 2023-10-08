@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InventoryManagementSystem;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace inventory_management_system_kap.Views
 {
     public partial class InvoicesView : Form
     {
+        UIHelper UIHelper = new UIHelper();
         public InvoicesView()
         {
             InitializeComponent();
+        }
+
+        private void InvoicesView_Load(object sender, EventArgs e)
+        {
+            UIHelper.UpdatePanelRegion(pnlInvoices);
         }
     }
 }
