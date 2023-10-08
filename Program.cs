@@ -1,4 +1,5 @@
-﻿using System;
+﻿using inventory_management_system_kap.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
