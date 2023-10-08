@@ -33,6 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>D:\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     <Reference Include="Guna.UI2">
       <HintPath>E:\Guna UI\framwork\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
@@ -62,6 +67,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\UIHelper.cs" />
     <Compile Include="Views\AddInvoiceView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\InventoryView.resx">
+      <DependentUpon>InventoryView.cs</DependentUpon>
     <EmbeddedResource Include="Views\ItemDetailsView.resx">
       <DependentUpon>ItemDetailsView.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +155,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\icons\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\low-in-stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\out-of-stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
