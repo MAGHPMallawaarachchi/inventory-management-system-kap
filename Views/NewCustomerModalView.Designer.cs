@@ -87,6 +87,7 @@
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel3.Location = new System.Drawing.Point(15, 360);
             this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(411, 52);
             this.guna2Panel3.TabIndex = 1;
@@ -359,7 +360,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.ImageSize = new System.Drawing.Size(11, 11);
-            this.guna2Button1.Location = new System.Drawing.Point(209, 21);
+            this.guna2Button1.Location = new System.Drawing.Point(209, 11);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(58, 28);
@@ -377,7 +378,7 @@
             this.btnAddItem.HoverState.Parent = this.btnAddItem;
             this.btnAddItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAddItem.Image")));
             this.btnAddItem.ImageSize = new System.Drawing.Size(11, 11);
-            this.btnAddItem.Location = new System.Drawing.Point(273, 21);
+            this.btnAddItem.Location = new System.Drawing.Point(273, 11);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
             this.btnAddItem.Size = new System.Drawing.Size(123, 28);
