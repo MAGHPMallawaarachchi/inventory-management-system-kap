@@ -124,6 +124,9 @@
     <EmbeddedResource Include="Views\InventoryView.resx">
       <DependentUpon>InventoryView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\InvoicesView.resx">
+      <DependentUpon>InvoicesView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ItemDetailsView.resx">
       <DependentUpon>ItemDetailsView.cs</DependentUpon>
     </EmbeddedResource>

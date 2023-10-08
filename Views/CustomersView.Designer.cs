@@ -42,7 +42,7 @@
             this.txtSearchBar = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCustomersHeading = new System.Windows.Forms.Label();
             this.btnFilter = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.dgvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -185,7 +185,7 @@
             this.tableLayoutPanel14.Controls.Add(this.txtSearchBar, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.lblCustomersHeading, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.btnFilter, 2, 0);
-            this.tableLayoutPanel14.Controls.Add(this.btnAddItem, 3, 0);
+            this.tableLayoutPanel14.Controls.Add(this.btnAddCustomer, 3, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(0);
@@ -265,28 +265,28 @@
             this.btnFilter.TabIndex = 23;
             this.btnFilter.Text = "Filter";
             // 
-            // btnAddItem
+            // btnAddCustomer
             // 
-            this.btnAddItem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.BorderRadius = 6;
-            this.btnAddItem.CheckedState.Parent = this.btnAddItem;
-            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddItem.CustomImages.Parent = this.btnAddItem;
-            this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddItem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.Font = new System.Drawing.Font("Inter", 10F);
-            this.btnAddItem.ForeColor = System.Drawing.Color.White;
-            this.btnAddItem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.HoverState.Parent = this.btnAddItem;
-            this.btnAddItem.Image = global::inventory_management_system_kap.Properties.Resources.Add;
-            this.btnAddItem.ImageSize = new System.Drawing.Size(14, 14);
-            this.btnAddItem.Location = new System.Drawing.Point(844, 0);
-            this.btnAddItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
-            this.btnAddItem.Size = new System.Drawing.Size(135, 29);
-            this.btnAddItem.TabIndex = 24;
-            this.btnAddItem.Text = "Add Customer";
+            this.btnAddCustomer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddCustomer.BorderRadius = 6;
+            this.btnAddCustomer.CheckedState.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCustomer.CustomImages.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddCustomer.Font = new System.Drawing.Font("Inter", 10F);
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnAddCustomer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddCustomer.HoverState.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.Image = global::inventory_management_system_kap.Properties.Resources.Add;
+            this.btnAddCustomer.ImageSize = new System.Drawing.Size(14, 14);
+            this.btnAddCustomer.Location = new System.Drawing.Point(844, 0);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.ShadowDecoration.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.Size = new System.Drawing.Size(135, 29);
+            this.btnAddCustomer.TabIndex = 24;
+            this.btnAddCustomer.Text = "Add Customer";
             // 
             // dgvCustomers
             // 
@@ -458,7 +458,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearchBar;
         private System.Windows.Forms.Label lblCustomersHeading;
         private Guna.UI2.WinForms.Guna2Button btnFilter;
-        private Guna.UI2.WinForms.Guna2Button btnAddItem;
+        private Guna.UI2.WinForms.Guna2Button btnAddCustomer;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCustomers;
         private System.Windows.Forms.DataGridViewTextBoxColumn number;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerId;
