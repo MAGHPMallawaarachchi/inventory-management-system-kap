@@ -23,5 +23,10 @@ namespace inventory_management_system_kap.Views
         {
             UIHelper.UpdatePanelRegion(pnlInvoices);
         }
+
+        private void pnlInvoices_SizeChanged(object sender, EventArgs e)
+        {
+            UIHelper.UpdatePanelRegion(pnlInvoices);
+        }
     }
 }

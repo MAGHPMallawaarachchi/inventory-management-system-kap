@@ -43,15 +43,15 @@
             this.lblCustomersHeading = new System.Windows.Forms.Label();
             this.btnFilter = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddCustomer = new Guna.UI2.WinForms.Guna2Button();
-            this.dgvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.contactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.pnlCustomers.SuspendLayout();
@@ -157,6 +157,7 @@
             this.pnlCustomers.Padding = new System.Windows.Forms.Padding(15);
             this.pnlCustomers.Size = new System.Drawing.Size(1014, 534);
             this.pnlCustomers.TabIndex = 1;
+            this.pnlCustomers.SizeChanged += new System.EventHandler(this.pnlCustomers_SizeChanged);
             // 
             // tableLayoutPanel13
             // 
@@ -288,6 +289,69 @@
             this.btnAddCustomer.TabIndex = 24;
             this.btnAddCustomer.Text = "Add Customer";
             // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.delete.FillWeight = 94.5946F;
+            this.delete.HeaderText = "";
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Width = 5;
+            // 
+            // edit
+            // 
+            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.edit.FillWeight = 95.59032F;
+            this.edit.HeaderText = "";
+            this.edit.Name = "edit";
+            this.edit.ReadOnly = true;
+            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.edit.Width = 17;
+            // 
+            // contactNumber
+            // 
+            this.contactNumber.FillWeight = 101.963F;
+            this.contactNumber.HeaderText = "Contact No.";
+            this.contactNumber.Name = "contactNumber";
+            this.contactNumber.ReadOnly = true;
+            // 
+            // city
+            // 
+            this.city.FillWeight = 101.963F;
+            this.city.HeaderText = "City";
+            this.city.Name = "city";
+            this.city.ReadOnly = true;
+            // 
+            // address
+            // 
+            this.address.FillWeight = 101.963F;
+            this.address.HeaderText = "Address";
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            // 
+            // name
+            // 
+            this.name.FillWeight = 101.963F;
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // customerId
+            // 
+            this.customerId.FillWeight = 101.963F;
+            this.customerId.HeaderText = "Customer ID";
+            this.customerId.Name = "customerId";
+            this.customerId.ReadOnly = true;
+            // 
+            // number
+            // 
+            this.number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.number.HeaderText = "No.";
+            this.number.Name = "number";
+            this.number.ReadOnly = true;
+            this.number.Width = 53;
+            // 
             // dgvCustomers
             // 
             this.dgvCustomers.AllowUserToAddRows = false;
@@ -358,69 +422,6 @@
             this.dgvCustomers.ThemeStyle.RowsStyle.Height = 22;
             this.dgvCustomers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvCustomers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            // 
-            // number
-            // 
-            this.number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.number.HeaderText = "No.";
-            this.number.Name = "number";
-            this.number.ReadOnly = true;
-            this.number.Width = 53;
-            // 
-            // customerId
-            // 
-            this.customerId.FillWeight = 101.963F;
-            this.customerId.HeaderText = "Customer ID";
-            this.customerId.Name = "customerId";
-            this.customerId.ReadOnly = true;
-            // 
-            // name
-            // 
-            this.name.FillWeight = 101.963F;
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // address
-            // 
-            this.address.FillWeight = 101.963F;
-            this.address.HeaderText = "Address";
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
-            // 
-            // city
-            // 
-            this.city.FillWeight = 101.963F;
-            this.city.HeaderText = "City";
-            this.city.Name = "city";
-            this.city.ReadOnly = true;
-            // 
-            // contactNumber
-            // 
-            this.contactNumber.FillWeight = 101.963F;
-            this.contactNumber.HeaderText = "Contact No.";
-            this.contactNumber.Name = "contactNumber";
-            this.contactNumber.ReadOnly = true;
-            // 
-            // edit
-            // 
-            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.edit.FillWeight = 95.59032F;
-            this.edit.HeaderText = "";
-            this.edit.Name = "edit";
-            this.edit.ReadOnly = true;
-            this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.edit.Width = 17;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.FillWeight = 94.5946F;
-            this.delete.HeaderText = "";
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            this.delete.Width = 5;
             // 
             // CustomersView
             // 
