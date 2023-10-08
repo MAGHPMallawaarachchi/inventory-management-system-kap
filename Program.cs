@@ -17,7 +17,7 @@ namespace inventory_management_system_kap
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ItemDetailsView());
+            Application.Run(new Dashboard());
         }
     }
 }
