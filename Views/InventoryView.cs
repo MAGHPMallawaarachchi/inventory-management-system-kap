@@ -23,7 +23,6 @@ namespace inventory_management_system_kap.Views
         {
             UIHelper.UpdatePanelRegion(pnlInventorySummary);
             UIHelper.UpdatePanelRegion(pnlItems);
-            UIHelper.UpdatePanelRegion(pnlSearchBar);
         }
     }
 }

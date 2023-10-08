@@ -71,12 +71,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnFilter = new Guna.UI.WinForms.GunaButton();
+            this.txtSearchBar = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAddItem = new Guna.UI.WinForms.GunaButton();
-            this.pnlSearchBar = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.txtSeacrhBar = new Guna.UI.WinForms.GunaTextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlInventorySummary.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -98,9 +95,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlSearchBar.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -428,6 +422,7 @@
             this.tableLayoutPanel13.Controls.Add(this.dgvItems, 0, 1);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(15, 15);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.754011F));
@@ -438,16 +433,16 @@
             // 
             // tableLayoutPanel14
             // 
-            this.tableLayoutPanel14.ColumnCount = 5;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.79959F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.077709F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel14.Controls.Add(this.btnFilter, 3, 0);
+            this.tableLayoutPanel14.ColumnCount = 4;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.25203F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.7439F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.231708F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.67073F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.Controls.Add(this.txtSearchBar, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.lblItemsHeading, 0, 0);
-            this.tableLayoutPanel14.Controls.Add(this.btnAddItem, 4, 0);
-            this.tableLayoutPanel14.Controls.Add(this.pnlSearchBar, 2, 0);
+            this.tableLayoutPanel14.Controls.Add(this.btnAddItem, 3, 0);
+            this.tableLayoutPanel14.Controls.Add(this.guna2Button1, 2, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(0);
@@ -465,7 +460,7 @@
             this.lblItemsHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.lblItemsHeading.Location = new System.Drawing.Point(3, 0);
             this.lblItemsHeading.Name = "lblItemsHeading";
-            this.lblItemsHeading.Size = new System.Drawing.Size(92, 29);
+            this.lblItemsHeading.Size = new System.Drawing.Size(518, 29);
             this.lblItemsHeading.TabIndex = 2;
             this.lblItemsHeading.Text = "Items";
             this.lblItemsHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -510,8 +505,8 @@
             this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvItems.EnableHeadersVisualStyles = false;
             this.dgvItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.dgvItems.Location = new System.Drawing.Point(3, 49);
-            this.dgvItems.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
+            this.dgvItems.Location = new System.Drawing.Point(3, 44);
+            this.dgvItems.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.RowHeadersVisible = false;
             this.dgvItems.RowTemplate.Height = 30;
@@ -519,7 +514,7 @@
             this.dgvItems.ShowCellErrors = false;
             this.dgvItems.ShowEditingIcon = false;
             this.dgvItems.ShowRowErrors = false;
-            this.dgvItems.Size = new System.Drawing.Size(978, 322);
+            this.dgvItems.Size = new System.Drawing.Size(978, 327);
             this.dgvItems.TabIndex = 2;
             this.dgvItems.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Dark;
             this.dgvItems.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Empty;
@@ -724,35 +719,39 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnFilter
+            // txtSearchBar
             // 
-            this.btnFilter.AnimationHoverSpeed = 0.07F;
-            this.btnFilter.AnimationSpeed = 0.03F;
-            this.btnFilter.BackColor = System.Drawing.Color.Transparent;
-            this.btnFilter.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFilter.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFilter.FocusedColor = System.Drawing.Color.Empty;
-            this.btnFilter.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilter.ForeColor = System.Drawing.Color.White;
-            this.btnFilter.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
-            this.btnFilter.ImageSize = new System.Drawing.Size(12, 12);
-            this.btnFilter.Location = new System.Drawing.Point(808, 0);
-            this.btnFilter.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnFilter.OnHoverImage = null;
-            this.btnFilter.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.Radius = 6;
-            this.btnFilter.Size = new System.Drawing.Size(73, 29);
-            this.btnFilter.TabIndex = 12;
-            this.btnFilter.Text = "Filter";
-            this.btnFilter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnFilter.TextOffsetX = 3;
+            this.txtSearchBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSearchBar.BorderRadius = 6;
+            this.txtSearchBar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchBar.DefaultText = "";
+            this.txtSearchBar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchBar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchBar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBar.DisabledState.Parent = this.txtSearchBar;
+            this.txtSearchBar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSearchBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSearchBar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.txtSearchBar.FocusedState.Parent = this.txtSearchBar;
+            this.txtSearchBar.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.txtSearchBar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.txtSearchBar.HoverState.Parent = this.txtSearchBar;
+            this.txtSearchBar.IconLeft = global::inventory_management_system_kap.Properties.Resources.search;
+            this.txtSearchBar.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.txtSearchBar.IconLeftSize = new System.Drawing.Size(14, 14);
+            this.txtSearchBar.Location = new System.Drawing.Point(531, 0);
+            this.txtSearchBar.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.txtSearchBar.Name = "txtSearchBar";
+            this.txtSearchBar.PasswordChar = '\0';
+            this.txtSearchBar.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.txtSearchBar.PlaceholderText = "Search here...";
+            this.txtSearchBar.SelectedText = "";
+            this.txtSearchBar.ShadowDecoration.Parent = this.txtSearchBar;
+            this.txtSearchBar.Size = new System.Drawing.Size(259, 29);
+            this.txtSearchBar.TabIndex = 22;
+            this.txtSearchBar.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // btnAddItem
             // 
@@ -766,11 +765,11 @@
             this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddItem.FocusedColor = System.Drawing.Color.Empty;
             this.btnAddItem.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItem.ForeColor = System.Drawing.Color.White;
+            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.btnAddItem.Image = global::inventory_management_system_kap.Properties.Resources.Add;
             this.btnAddItem.ImageSize = new System.Drawing.Size(12, 12);
-            this.btnAddItem.Location = new System.Drawing.Point(887, 0);
-            this.btnAddItem.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.btnAddItem.Location = new System.Drawing.Point(883, 0);
+            this.btnAddItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
             this.btnAddItem.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
@@ -778,73 +777,34 @@
             this.btnAddItem.OnHoverImage = null;
             this.btnAddItem.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
             this.btnAddItem.Radius = 6;
-            this.btnAddItem.Size = new System.Drawing.Size(94, 29);
+            this.btnAddItem.Size = new System.Drawing.Size(96, 29);
             this.btnAddItem.TabIndex = 9;
             this.btnAddItem.Text = "Add Item";
             this.btnAddItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnAddItem.TextOffsetX = 3;
             // 
-            // pnlSearchBar
+            // guna2Button1
             // 
-            this.pnlSearchBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.pnlSearchBar.Controls.Add(this.tableLayoutPanel15);
-            this.pnlSearchBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSearchBar.Location = new System.Drawing.Point(495, 0);
-            this.pnlSearchBar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.pnlSearchBar.Name = "pnlSearchBar";
-            this.pnlSearchBar.Size = new System.Drawing.Size(307, 29);
-            this.pnlSearchBar.TabIndex = 13;
-            // 
-            // tableLayoutPanel15
-            // 
-            this.tableLayoutPanel15.ColumnCount = 2;
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.37785F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.62215F));
-            this.tableLayoutPanel15.Controls.Add(this.txtSeacrhBar, 1, 0);
-            this.tableLayoutPanel15.Controls.Add(this.pictureBox5, 0, 0);
-            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.RowCount = 1;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(307, 29);
-            this.tableLayoutPanel15.TabIndex = 0;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::inventory_management_system_kap.Properties.Resources.search;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(38, 29);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // txtSeacrhBar
-            // 
-            this.txtSeacrhBar.AllowDrop = true;
-            this.txtSeacrhBar.BackColor = System.Drawing.Color.Transparent;
-            this.txtSeacrhBar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.txtSeacrhBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.txtSeacrhBar.BorderSize = 1;
-            this.txtSeacrhBar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSeacrhBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSeacrhBar.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.txtSeacrhBar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.txtSeacrhBar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.txtSeacrhBar.Font = new System.Drawing.Font("Inter", 10F);
-            this.txtSeacrhBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.txtSeacrhBar.Location = new System.Drawing.Point(41, 0);
-            this.txtSeacrhBar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.txtSeacrhBar.Name = "txtSeacrhBar";
-            this.txtSeacrhBar.PasswordChar = '\0';
-            this.txtSeacrhBar.SelectedText = "";
-            this.txtSeacrhBar.Size = new System.Drawing.Size(263, 29);
-            this.txtSeacrhBar.TabIndex = 16;
-            this.txtSeacrhBar.Text = "Search here...";
+            this.guna2Button1.BorderRadius = 6;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(14, 14);
+            this.guna2Button1.Location = new System.Drawing.Point(802, 0);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(71, 29);
+            this.guna2Button1.TabIndex = 23;
+            this.guna2Button1.Text = "Filter";
             // 
             // InventoryView
             // 
@@ -885,9 +845,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlSearchBar.ResumeLayout(false);
-            this.tableLayoutPanel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -928,7 +885,6 @@
         private Guna.UI.WinForms.GunaButton btnPrevious;
         private Guna.UI.WinForms.GunaButton btnAddItem;
         private Guna.UI.WinForms.GunaButton btnNext;
-        private Guna.UI.WinForms.GunaButton btnFilter;
         private Guna.UI.WinForms.GunaDataGridView dgvItems;
         private System.Windows.Forms.DataGridViewTextBoxColumn number;
         private System.Windows.Forms.DataGridViewTextBoxColumn partNumber;
@@ -937,9 +893,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn qtySold;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitPrice;
         private System.Windows.Forms.DataGridViewImageColumn availability;
-        private System.Windows.Forms.Panel pnlSearchBar;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
-        private Guna.UI.WinForms.GunaTextBox txtSeacrhBar;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearchBar;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
