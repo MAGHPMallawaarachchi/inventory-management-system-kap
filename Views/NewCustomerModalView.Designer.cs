@@ -90,7 +90,7 @@
             this.txtContactNumber.BorderRadius = 6;
             this.txtContactNumber.BorderThickness = 0;
             this.txtContactNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContactNumber.DefaultText = "Enter the Contact Number";
+            this.txtContactNumber.DefaultText = "";
             this.txtContactNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtContactNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtContactNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -107,9 +107,8 @@
             this.txtContactNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
             this.txtContactNumber.Name = "txtContactNumber";
             this.txtContactNumber.PasswordChar = '\0';
-            this.txtContactNumber.PlaceholderText = "";
+            this.txtContactNumber.PlaceholderText = "Enter the Contact Number";
             this.txtContactNumber.SelectedText = "";
-            this.txtContactNumber.SelectionStart = 24;
             this.txtContactNumber.ShadowDecoration.Parent = this.txtContactNumber;
             this.txtContactNumber.Size = new System.Drawing.Size(229, 36);
             this.txtContactNumber.TabIndex = 5;
@@ -121,7 +120,7 @@
             this.txtCity.BorderRadius = 6;
             this.txtCity.BorderThickness = 0;
             this.txtCity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCity.DefaultText = "Enter the City";
+            this.txtCity.DefaultText = "";
             this.txtCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtCity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtCity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -138,9 +137,8 @@
             this.txtCity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
             this.txtCity.Name = "txtCity";
             this.txtCity.PasswordChar = '\0';
-            this.txtCity.PlaceholderText = "";
+            this.txtCity.PlaceholderText = "Enter the City";
             this.txtCity.SelectedText = "";
-            this.txtCity.SelectionStart = 14;
             this.txtCity.ShadowDecoration.Parent = this.txtCity;
             this.txtCity.Size = new System.Drawing.Size(229, 36);
             this.txtCity.TabIndex = 4;
@@ -152,7 +150,7 @@
             this.txtAddress.BorderRadius = 6;
             this.txtAddress.BorderThickness = 0;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddress.DefaultText = "Enter Address";
+            this.txtAddress.DefaultText = "";
             this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -169,9 +167,8 @@
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
-            this.txtAddress.PlaceholderText = "";
+            this.txtAddress.PlaceholderText = "Enter Address";
             this.txtAddress.SelectedText = "";
-            this.txtAddress.SelectionStart = 13;
             this.txtAddress.ShadowDecoration.Parent = this.txtAddress;
             this.txtAddress.Size = new System.Drawing.Size(229, 36);
             this.txtAddress.TabIndex = 3;
@@ -183,7 +180,7 @@
             this.txtName.BorderRadius = 6;
             this.txtName.BorderThickness = 0;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.DefaultText = "Enter name";
+            this.txtName.DefaultText = "";
             this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -200,9 +197,8 @@
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
-            this.txtName.PlaceholderText = "";
+            this.txtName.PlaceholderText = "Enter name";
             this.txtName.SelectedText = "";
-            this.txtName.SelectionStart = 10;
             this.txtName.ShadowDecoration.Parent = this.txtName;
             this.txtName.Size = new System.Drawing.Size(229, 36);
             this.txtName.TabIndex = 2;

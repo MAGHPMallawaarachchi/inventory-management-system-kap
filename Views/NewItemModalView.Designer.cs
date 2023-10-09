@@ -55,7 +55,7 @@
             this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
             this.nudQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
@@ -399,7 +399,7 @@
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.guna2Button1);
+            this.guna2Panel3.Controls.Add(this.btnClear);
             this.guna2Panel3.Controls.Add(this.btnAddItem);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel3.Location = new System.Drawing.Point(15, 567);
@@ -536,24 +536,24 @@
             this.cmbCategory.Size = new System.Drawing.Size(229, 36);
             this.cmbCategory.TabIndex = 9;
             // 
-            // guna2Button1
+            // btnClear
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2Button1.BorderRadius = 6;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(11, 11);
-            this.guna2Button1.Location = new System.Drawing.Point(243, 21);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(58, 28);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Clear";
+            this.btnClear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnClear.BorderRadius = 6;
+            this.btnClear.BorderThickness = 1;
+            this.btnClear.CheckedState.Parent = this.btnClear;
+            this.btnClear.CustomImages.Parent = this.btnClear;
+            this.btnClear.FillColor = System.Drawing.Color.Transparent;
+            this.btnClear.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnClear.HoverState.Parent = this.btnClear;
+            this.btnClear.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnClear.Location = new System.Drawing.Point(243, 21);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.ShadowDecoration.Parent = this.btnClear;
+            this.btnClear.Size = new System.Drawing.Size(58, 28);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear";
             // 
             // NewItemModalView
             // 
@@ -606,6 +606,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbCategory;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudQuantity;
         private Guna.UI2.WinForms.Guna2ComboBox cmbBrand;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnClear;
     }
 }
