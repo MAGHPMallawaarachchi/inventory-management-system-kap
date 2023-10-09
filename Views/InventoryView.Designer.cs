@@ -58,6 +58,14 @@
             this.lblInventorySummary = new System.Windows.Forms.Label();
             this.pnlItems = new System.Windows.Forms.Panel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvItems = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtyInHand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtySold = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availability = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSearchBar = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblItemsHeading = new System.Windows.Forms.Label();
@@ -67,14 +75,6 @@
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
-            this.dgvItems = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.partNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qtyInHand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qtySold = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availability = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlInventorySummary.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -93,9 +93,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlItems.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -110,7 +110,6 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(20);
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -123,11 +122,11 @@
             this.pnlInventorySummary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.pnlInventorySummary.Controls.Add(this.tableLayoutPanel3);
             this.pnlInventorySummary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlInventorySummary.Location = new System.Drawing.Point(20, 20);
+            this.pnlInventorySummary.Location = new System.Drawing.Point(0, 0);
             this.pnlInventorySummary.Margin = new System.Windows.Forms.Padding(0);
             this.pnlInventorySummary.Name = "pnlInventorySummary";
             this.pnlInventorySummary.Padding = new System.Windows.Forms.Padding(15);
-            this.pnlInventorySummary.Size = new System.Drawing.Size(1014, 115);
+            this.pnlInventorySummary.Size = new System.Drawing.Size(1054, 115);
             this.pnlInventorySummary.TabIndex = 0;
             this.pnlInventorySummary.SizeChanged += new System.EventHandler(this.pnlInventorySummary_SizeChanged);
             // 
@@ -144,7 +143,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.58824F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.41177F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(984, 85);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1024, 85);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // tableLayoutPanel4
@@ -164,7 +163,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(984, 59);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1024, 59);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // tableLayoutPanel9
@@ -175,12 +174,12 @@
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel12, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.pictureBox4, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(741, 3);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(771, 3);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(240, 53);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(250, 53);
             this.tableLayoutPanel9.TabIndex = 6;
             // 
             // tableLayoutPanel12
@@ -189,7 +188,7 @@
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.Controls.Add(this.outOfStock, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.lblOutOfStock, 0, 1);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(64, 0);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(66, 0);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 2;
@@ -230,7 +229,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox4.Size = new System.Drawing.Size(66, 53);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
@@ -243,12 +242,12 @@
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel11, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(495, 3);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(515, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(240, 53);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(250, 53);
             this.tableLayoutPanel7.TabIndex = 5;
             // 
             // tableLayoutPanel11
@@ -257,7 +256,7 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Controls.Add(this.lowInStock, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.lblLowInStock, 0, 1);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(64, 0);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(66, 0);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 2;
@@ -298,7 +297,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox2.Size = new System.Drawing.Size(66, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -311,12 +310,12 @@
             this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel10, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(249, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(259, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(240, 53);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(250, 53);
             this.tableLayoutPanel8.TabIndex = 4;
             // 
             // tableLayoutPanel10
@@ -325,7 +324,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.Controls.Add(this.categories, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.lblCategories, 0, 1);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(64, 0);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(66, 0);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
@@ -366,7 +365,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox3.Size = new System.Drawing.Size(66, 53);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
@@ -384,7 +383,7 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(240, 53);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(250, 53);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -393,7 +392,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.items, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.lblItems, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(64, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(66, 0);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
@@ -434,7 +433,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 53);
+            this.pictureBox1.Size = new System.Drawing.Size(66, 53);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -455,11 +454,11 @@
             this.pnlItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.pnlItems.Controls.Add(this.tableLayoutPanel13);
             this.pnlItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlItems.Location = new System.Drawing.Point(20, 155);
+            this.pnlItems.Location = new System.Drawing.Point(0, 135);
             this.pnlItems.Margin = new System.Windows.Forms.Padding(0, 20, 0, 10);
             this.pnlItems.Name = "pnlItems";
             this.pnlItems.Padding = new System.Windows.Forms.Padding(15);
-            this.pnlItems.Size = new System.Drawing.Size(1014, 404);
+            this.pnlItems.Size = new System.Drawing.Size(1054, 444);
             this.pnlItems.TabIndex = 1;
             this.pnlItems.SizeChanged += new System.EventHandler(this.pnlItems_SizeChanged);
             // 
@@ -476,192 +475,8 @@
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(984, 374);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(1024, 414);
             this.tableLayoutPanel13.TabIndex = 2;
-            // 
-            // tableLayoutPanel14
-            // 
-            this.tableLayoutPanel14.ColumnCount = 4;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.25203F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.7439F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.231708F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.67073F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel14.Controls.Add(this.txtSearchBar, 0, 0);
-            this.tableLayoutPanel14.Controls.Add(this.lblItemsHeading, 0, 0);
-            this.tableLayoutPanel14.Controls.Add(this.btnFilter, 2, 0);
-            this.tableLayoutPanel14.Controls.Add(this.btnAddItem, 3, 0);
-            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-            this.tableLayoutPanel14.RowCount = 1;
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(984, 29);
-            this.tableLayoutPanel14.TabIndex = 1;
-            // 
-            // txtSearchBar
-            // 
-            this.txtSearchBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.txtSearchBar.BorderRadius = 6;
-            this.txtSearchBar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchBar.DefaultText = "";
-            this.txtSearchBar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchBar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchBar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBar.DisabledState.Parent = this.txtSearchBar;
-            this.txtSearchBar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSearchBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.txtSearchBar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.txtSearchBar.FocusedState.Parent = this.txtSearchBar;
-            this.txtSearchBar.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.txtSearchBar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.txtSearchBar.HoverState.Parent = this.txtSearchBar;
-            this.txtSearchBar.IconLeft = global::inventory_management_system_kap.Properties.Resources.search;
-            this.txtSearchBar.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txtSearchBar.IconLeftSize = new System.Drawing.Size(14, 14);
-            this.txtSearchBar.Location = new System.Drawing.Point(531, 0);
-            this.txtSearchBar.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.txtSearchBar.Name = "txtSearchBar";
-            this.txtSearchBar.PasswordChar = '\0';
-            this.txtSearchBar.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.txtSearchBar.PlaceholderText = "Search here...";
-            this.txtSearchBar.SelectedText = "";
-            this.txtSearchBar.ShadowDecoration.Parent = this.txtSearchBar;
-            this.txtSearchBar.Size = new System.Drawing.Size(259, 29);
-            this.txtSearchBar.TabIndex = 22;
-            this.txtSearchBar.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // lblItemsHeading
-            // 
-            this.lblItemsHeading.AutoSize = true;
-            this.lblItemsHeading.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblItemsHeading.Font = new System.Drawing.Font("Inter Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItemsHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.lblItemsHeading.Location = new System.Drawing.Point(3, 0);
-            this.lblItemsHeading.Name = "lblItemsHeading";
-            this.lblItemsHeading.Size = new System.Drawing.Size(518, 29);
-            this.lblItemsHeading.TabIndex = 2;
-            this.lblItemsHeading.Text = "Items";
-            this.lblItemsHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnFilter
-            // 
-            this.btnFilter.BorderRadius = 6;
-            this.btnFilter.CheckedState.Parent = this.btnFilter;
-            this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFilter.CustomImages.Parent = this.btnFilter;
-            this.btnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFilter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.btnFilter.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.HoverState.Parent = this.btnFilter;
-            this.btnFilter.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
-            this.btnFilter.ImageSize = new System.Drawing.Size(14, 14);
-            this.btnFilter.Location = new System.Drawing.Point(802, 0);
-            this.btnFilter.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnFilter.ShadowDecoration.Parent = this.btnFilter;
-            this.btnFilter.Size = new System.Drawing.Size(71, 29);
-            this.btnFilter.TabIndex = 23;
-            this.btnFilter.Text = "Filter";
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.BorderRadius = 6;
-            this.btnAddItem.CheckedState.Parent = this.btnAddItem;
-            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddItem.CustomImages.Parent = this.btnAddItem;
-            this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddItem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.Font = new System.Drawing.Font("Inter", 10F);
-            this.btnAddItem.ForeColor = System.Drawing.Color.White;
-            this.btnAddItem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.HoverState.Parent = this.btnAddItem;
-            this.btnAddItem.Image = global::inventory_management_system_kap.Properties.Resources.Add;
-            this.btnAddItem.ImageSize = new System.Drawing.Size(14, 14);
-            this.btnAddItem.Location = new System.Drawing.Point(883, 0);
-            this.btnAddItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
-            this.btnAddItem.Size = new System.Drawing.Size(96, 29);
-            this.btnAddItem.TabIndex = 24;
-            this.btnAddItem.Text = "Add Item";
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Controls.Add(this.btnNext, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblPageNumber, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnPrevious, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(23, 572);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1008, 36);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // btnNext
-            // 
-            this.btnNext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.btnNext.BorderRadius = 6;
-            this.btnNext.BorderThickness = 1;
-            this.btnNext.CheckedState.Parent = this.btnNext;
-            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNext.CustomImages.Parent = this.btnNext;
-            this.btnNext.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNext.FillColor = System.Drawing.Color.Empty;
-            this.btnNext.Font = new System.Drawing.Font("Inter", 10F);
-            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.btnNext.HoverState.Parent = this.btnNext;
-            this.btnNext.Location = new System.Drawing.Point(909, 3);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.ShadowDecoration.Parent = this.btnNext;
-            this.btnNext.Size = new System.Drawing.Size(96, 30);
-            this.btnNext.TabIndex = 9;
-            this.btnNext.Text = "Next";
-            // 
-            // lblPageNumber
-            // 
-            this.lblPageNumber.AutoSize = true;
-            this.lblPageNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPageNumber.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPageNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.lblPageNumber.Location = new System.Drawing.Point(103, 0);
-            this.lblPageNumber.Name = "lblPageNumber";
-            this.lblPageNumber.Size = new System.Drawing.Size(800, 36);
-            this.lblPageNumber.TabIndex = 6;
-            this.lblPageNumber.Text = "1 Of 10";
-            this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.btnPrevious.BorderRadius = 6;
-            this.btnPrevious.BorderThickness = 1;
-            this.btnPrevious.CheckedState.Parent = this.btnPrevious;
-            this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrevious.CustomImages.Parent = this.btnPrevious;
-            this.btnPrevious.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPrevious.FillColor = System.Drawing.Color.Empty;
-            this.btnPrevious.Font = new System.Drawing.Font("Inter", 10F);
-            this.btnPrevious.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.btnPrevious.HoverState.Parent = this.btnPrevious;
-            this.btnPrevious.Location = new System.Drawing.Point(3, 3);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.ShadowDecoration.Parent = this.btnPrevious;
-            this.btnPrevious.Size = new System.Drawing.Size(94, 30);
-            this.btnPrevious.TabIndex = 8;
-            this.btnPrevious.Text = "Previous";
             // 
             // dgvItems
             // 
@@ -708,7 +523,7 @@
             this.dgvItems.ReadOnly = true;
             this.dgvItems.RowHeadersVisible = false;
             this.dgvItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItems.Size = new System.Drawing.Size(984, 330);
+            this.dgvItems.Size = new System.Drawing.Size(1024, 370);
             this.dgvItems.TabIndex = 3;
             this.dgvItems.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgvItems.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -779,6 +594,190 @@
             this.availability.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.availability.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 4;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.25203F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.7439F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.231708F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.67073F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.Controls.Add(this.txtSearchBar, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.lblItemsHeading, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.btnFilter, 2, 0);
+            this.tableLayoutPanel14.Controls.Add(this.btnAddItem, 3, 0);
+            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 1;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(1024, 29);
+            this.tableLayoutPanel14.TabIndex = 1;
+            // 
+            // txtSearchBar
+            // 
+            this.txtSearchBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSearchBar.BorderRadius = 6;
+            this.txtSearchBar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchBar.DefaultText = "";
+            this.txtSearchBar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchBar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchBar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBar.DisabledState.Parent = this.txtSearchBar;
+            this.txtSearchBar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSearchBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtSearchBar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.txtSearchBar.FocusedState.Parent = this.txtSearchBar;
+            this.txtSearchBar.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.txtSearchBar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.txtSearchBar.HoverState.Parent = this.txtSearchBar;
+            this.txtSearchBar.IconLeft = global::inventory_management_system_kap.Properties.Resources.search;
+            this.txtSearchBar.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.txtSearchBar.IconLeftSize = new System.Drawing.Size(14, 14);
+            this.txtSearchBar.Location = new System.Drawing.Point(552, 0);
+            this.txtSearchBar.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.txtSearchBar.Name = "txtSearchBar";
+            this.txtSearchBar.PasswordChar = '\0';
+            this.txtSearchBar.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.txtSearchBar.PlaceholderText = "Search here...";
+            this.txtSearchBar.SelectedText = "";
+            this.txtSearchBar.ShadowDecoration.Parent = this.txtSearchBar;
+            this.txtSearchBar.Size = new System.Drawing.Size(270, 29);
+            this.txtSearchBar.TabIndex = 22;
+            this.txtSearchBar.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // lblItemsHeading
+            // 
+            this.lblItemsHeading.AutoSize = true;
+            this.lblItemsHeading.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblItemsHeading.Font = new System.Drawing.Font("Inter Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItemsHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.lblItemsHeading.Location = new System.Drawing.Point(3, 0);
+            this.lblItemsHeading.Name = "lblItemsHeading";
+            this.lblItemsHeading.Size = new System.Drawing.Size(539, 29);
+            this.lblItemsHeading.TabIndex = 2;
+            this.lblItemsHeading.Text = "Items";
+            this.lblItemsHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.BorderRadius = 6;
+            this.btnFilter.CheckedState.Parent = this.btnFilter;
+            this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFilter.CustomImages.Parent = this.btnFilter;
+            this.btnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnFilter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.btnFilter.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.HoverState.Parent = this.btnFilter;
+            this.btnFilter.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
+            this.btnFilter.ImageSize = new System.Drawing.Size(14, 14);
+            this.btnFilter.Location = new System.Drawing.Point(834, 0);
+            this.btnFilter.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnFilter.ShadowDecoration.Parent = this.btnFilter;
+            this.btnFilter.Size = new System.Drawing.Size(74, 29);
+            this.btnFilter.TabIndex = 23;
+            this.btnFilter.Text = "Filter";
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.BorderRadius = 6;
+            this.btnAddItem.CheckedState.Parent = this.btnAddItem;
+            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddItem.CustomImages.Parent = this.btnAddItem;
+            this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddItem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.Font = new System.Drawing.Font("Inter", 10F);
+            this.btnAddItem.ForeColor = System.Drawing.Color.White;
+            this.btnAddItem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddItem.HoverState.Parent = this.btnAddItem;
+            this.btnAddItem.Image = global::inventory_management_system_kap.Properties.Resources.Add;
+            this.btnAddItem.ImageSize = new System.Drawing.Size(14, 14);
+            this.btnAddItem.Location = new System.Drawing.Point(918, 0);
+            this.btnAddItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
+            this.btnAddItem.Size = new System.Drawing.Size(101, 29);
+            this.btnAddItem.TabIndex = 24;
+            this.btnAddItem.Text = "Add Item";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.Controls.Add(this.btnNext, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblPageNumber, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnPrevious, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 592);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1048, 36);
+            this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // btnNext
+            // 
+            this.btnNext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnNext.BorderRadius = 6;
+            this.btnNext.BorderThickness = 1;
+            this.btnNext.CheckedState.Parent = this.btnNext;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.CustomImages.Parent = this.btnNext;
+            this.btnNext.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNext.FillColor = System.Drawing.Color.Empty;
+            this.btnNext.Font = new System.Drawing.Font("Inter", 10F);
+            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnNext.HoverState.Parent = this.btnNext;
+            this.btnNext.Location = new System.Drawing.Point(945, 3);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.ShadowDecoration.Parent = this.btnNext;
+            this.btnNext.Size = new System.Drawing.Size(100, 30);
+            this.btnNext.TabIndex = 9;
+            this.btnNext.Text = "Next";
+            // 
+            // lblPageNumber
+            // 
+            this.lblPageNumber.AutoSize = true;
+            this.lblPageNumber.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPageNumber.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPageNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblPageNumber.Location = new System.Drawing.Point(107, 0);
+            this.lblPageNumber.Name = "lblPageNumber";
+            this.lblPageNumber.Size = new System.Drawing.Size(832, 36);
+            this.lblPageNumber.TabIndex = 6;
+            this.lblPageNumber.Text = "1 Of 10";
+            this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnPrevious.BorderRadius = 6;
+            this.btnPrevious.BorderThickness = 1;
+            this.btnPrevious.CheckedState.Parent = this.btnPrevious;
+            this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrevious.CustomImages.Parent = this.btnPrevious;
+            this.btnPrevious.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPrevious.FillColor = System.Drawing.Color.Empty;
+            this.btnPrevious.Font = new System.Drawing.Font("Inter", 10F);
+            this.btnPrevious.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnPrevious.HoverState.Parent = this.btnPrevious;
+            this.btnPrevious.Location = new System.Drawing.Point(3, 3);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.ShadowDecoration.Parent = this.btnPrevious;
+            this.btnPrevious.Size = new System.Drawing.Size(98, 30);
+            this.btnPrevious.TabIndex = 8;
+            this.btnPrevious.Text = "Previous";
+            // 
             // InventoryView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -813,11 +812,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlItems.ResumeLayout(false);
             this.tableLayoutPanel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel14.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.ResumeLayout(false);
 
         }

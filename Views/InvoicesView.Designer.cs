@@ -67,13 +67,13 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.pnlInvoices, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 20);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1014, 591);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1054, 631);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -86,11 +86,11 @@
             this.tableLayoutPanel2.Controls.Add(this.lblPageNumber, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnPrevious, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 552);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 592);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1008, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1048, 36);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // btnNext
@@ -106,10 +106,10 @@
             this.btnNext.Font = new System.Drawing.Font("Inter", 10F);
             this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.btnNext.HoverState.Parent = this.btnNext;
-            this.btnNext.Location = new System.Drawing.Point(909, 3);
+            this.btnNext.Location = new System.Drawing.Point(945, 3);
             this.btnNext.Name = "btnNext";
             this.btnNext.ShadowDecoration.Parent = this.btnNext;
-            this.btnNext.Size = new System.Drawing.Size(96, 30);
+            this.btnNext.Size = new System.Drawing.Size(100, 30);
             this.btnNext.TabIndex = 9;
             this.btnNext.Text = "Next";
             // 
@@ -119,9 +119,9 @@
             this.lblPageNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPageNumber.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPageNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.lblPageNumber.Location = new System.Drawing.Point(103, 0);
+            this.lblPageNumber.Location = new System.Drawing.Point(107, 0);
             this.lblPageNumber.Name = "lblPageNumber";
-            this.lblPageNumber.Size = new System.Drawing.Size(800, 36);
+            this.lblPageNumber.Size = new System.Drawing.Size(832, 36);
             this.lblPageNumber.TabIndex = 6;
             this.lblPageNumber.Text = "1 Of 10";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,7 +142,7 @@
             this.btnPrevious.Location = new System.Drawing.Point(3, 3);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.ShadowDecoration.Parent = this.btnPrevious;
-            this.btnPrevious.Size = new System.Drawing.Size(94, 30);
+            this.btnPrevious.Size = new System.Drawing.Size(98, 30);
             this.btnPrevious.TabIndex = 8;
             this.btnPrevious.Text = "Previous";
             // 
@@ -155,7 +155,7 @@
             this.pnlInvoices.Margin = new System.Windows.Forms.Padding(0, 0, 0, 15);
             this.pnlInvoices.Name = "pnlInvoices";
             this.pnlInvoices.Padding = new System.Windows.Forms.Padding(15);
-            this.pnlInvoices.Size = new System.Drawing.Size(1014, 534);
+            this.pnlInvoices.Size = new System.Drawing.Size(1054, 574);
             this.pnlInvoices.TabIndex = 1;
             this.pnlInvoices.SizeChanged += new System.EventHandler(this.pnlInvoices_SizeChanged);
             // 
@@ -172,7 +172,7 @@
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 99.99999F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(984, 504);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(1024, 544);
             this.tableLayoutPanel13.TabIndex = 4;
             // 
             // tableLayoutPanel14
@@ -193,7 +193,7 @@
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(984, 29);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(1024, 29);
             this.tableLayoutPanel14.TabIndex = 1;
             // 
             // txtSearchBar
@@ -218,7 +218,7 @@
             this.txtSearchBar.IconLeft = global::inventory_management_system_kap.Properties.Resources.search;
             this.txtSearchBar.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtSearchBar.IconLeftSize = new System.Drawing.Size(14, 14);
-            this.txtSearchBar.Location = new System.Drawing.Point(492, 0);
+            this.txtSearchBar.Location = new System.Drawing.Point(512, 0);
             this.txtSearchBar.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.txtSearchBar.Name = "txtSearchBar";
             this.txtSearchBar.PasswordChar = '\0';
@@ -226,7 +226,7 @@
             this.txtSearchBar.PlaceholderText = "Search here...";
             this.txtSearchBar.SelectedText = "";
             this.txtSearchBar.ShadowDecoration.Parent = this.txtSearchBar;
-            this.txtSearchBar.Size = new System.Drawing.Size(259, 29);
+            this.txtSearchBar.Size = new System.Drawing.Size(270, 29);
             this.txtSearchBar.TabIndex = 22;
             this.txtSearchBar.TextOffset = new System.Drawing.Point(5, 0);
             // 
@@ -238,7 +238,7 @@
             this.lblInvoicesHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.lblInvoicesHeading.Location = new System.Drawing.Point(3, 0);
             this.lblInvoicesHeading.Name = "lblInvoicesHeading";
-            this.lblInvoicesHeading.Size = new System.Drawing.Size(479, 29);
+            this.lblInvoicesHeading.Size = new System.Drawing.Size(499, 29);
             this.lblInvoicesHeading.TabIndex = 2;
             this.lblInvoicesHeading.Text = "Invoices";
             this.lblInvoicesHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -257,12 +257,12 @@
             this.btnFilter.HoverState.Parent = this.btnFilter;
             this.btnFilter.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
             this.btnFilter.ImageSize = new System.Drawing.Size(14, 14);
-            this.btnFilter.Location = new System.Drawing.Point(763, 0);
+            this.btnFilter.Location = new System.Drawing.Point(794, 0);
             this.btnFilter.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.btnFilter.ShadowDecoration.Parent = this.btnFilter;
-            this.btnFilter.Size = new System.Drawing.Size(71, 29);
+            this.btnFilter.Size = new System.Drawing.Size(74, 29);
             this.btnFilter.TabIndex = 23;
             this.btnFilter.Text = "Filter";
             // 
@@ -281,11 +281,11 @@
             this.btnAddInvoice.HoverState.Parent = this.btnAddInvoice;
             this.btnAddInvoice.Image = global::inventory_management_system_kap.Properties.Resources.Add;
             this.btnAddInvoice.ImageSize = new System.Drawing.Size(14, 14);
-            this.btnAddInvoice.Location = new System.Drawing.Point(844, 0);
+            this.btnAddInvoice.Location = new System.Drawing.Point(878, 0);
             this.btnAddInvoice.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnAddInvoice.Name = "btnAddInvoice";
             this.btnAddInvoice.ShadowDecoration.Parent = this.btnAddInvoice;
-            this.btnAddInvoice.Size = new System.Drawing.Size(135, 29);
+            this.btnAddInvoice.Size = new System.Drawing.Size(141, 29);
             this.btnAddInvoice.TabIndex = 24;
             this.btnAddInvoice.Text = "Add Invoice";
             // 
@@ -335,7 +335,7 @@
             this.dgvInvoices.ReadOnly = true;
             this.dgvInvoices.RowHeadersVisible = false;
             this.dgvInvoices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInvoices.Size = new System.Drawing.Size(984, 460);
+            this.dgvInvoices.Size = new System.Drawing.Size(1024, 500);
             this.dgvInvoices.TabIndex = 2;
             this.dgvInvoices.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgvInvoices.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -430,7 +430,6 @@
             this.ClientSize = new System.Drawing.Size(1054, 631);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "InvoicesView";
-            this.Padding = new System.Windows.Forms.Padding(20);
             this.Text = "InvoicesView";
             this.Load += new System.EventHandler(this.InvoicesView_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

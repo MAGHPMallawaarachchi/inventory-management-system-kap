@@ -299,7 +299,7 @@
             this.guna2HtmlLabel12.Location = new System.Drawing.Point(19, 71);
             this.guna2HtmlLabel12.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(175, 17);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(177, 17);
             this.guna2HtmlLabel12.TabIndex = 6;
             this.guna2HtmlLabel12.Text = "Chai Mongkol country of origin";
             // 
@@ -311,7 +311,7 @@
             this.guna2HtmlLabel11.Location = new System.Drawing.Point(19, 43);
             this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(161, 17);
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(160, 17);
             this.guna2HtmlLabel11.TabIndex = 5;
             this.guna2HtmlLabel11.Text = "TOYOTA HILUX KUN 15 R/H";
             // 
@@ -323,7 +323,7 @@
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(19, 15);
             this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(84, 17);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(83, 17);
             this.guna2HtmlLabel10.TabIndex = 4;
             this.guna2HtmlLabel10.Text = "45535-0K010";
             // 
@@ -346,7 +346,7 @@
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(0, 71);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(49, 17);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(50, 17);
             this.guna2HtmlLabel6.TabIndex = 5;
             this.guna2HtmlLabel6.Text = "Supplier";
             // 
@@ -358,7 +358,7 @@
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(0, 43);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(67, 17);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(68, 17);
             this.guna2HtmlLabel5.TabIndex = 4;
             this.guna2HtmlLabel5.Text = "Description";
             // 
@@ -370,7 +370,7 @@
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(0, 15);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(77, 17);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(78, 17);
             this.guna2HtmlLabel4.TabIndex = 3;
             this.guna2HtmlLabel4.Text = "OEM Number";
             // 
@@ -422,7 +422,7 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(0, 10);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(146, 35);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(153, 34);
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "YB03-1001";
             // 
@@ -468,7 +468,7 @@
             this.guna2HtmlLabel22.Location = new System.Drawing.Point(203, 156);
             this.guna2HtmlLabel22.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            this.guna2HtmlLabel22.Size = new System.Drawing.Size(84, 17);
+            this.guna2HtmlLabel22.Size = new System.Drawing.Size(83, 17);
             this.guna2HtmlLabel22.TabIndex = 12;
             this.guna2HtmlLabel22.Text = "45535-0K010";
             // 
@@ -480,7 +480,7 @@
             this.guna2HtmlLabel21.Location = new System.Drawing.Point(203, 104);
             this.guna2HtmlLabel21.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            this.guna2HtmlLabel21.Size = new System.Drawing.Size(84, 17);
+            this.guna2HtmlLabel21.Size = new System.Drawing.Size(83, 17);
             this.guna2HtmlLabel21.TabIndex = 11;
             this.guna2HtmlLabel21.Text = "45535-0K010";
             // 
@@ -492,7 +492,7 @@
             this.guna2HtmlLabel20.Location = new System.Drawing.Point(203, 50);
             this.guna2HtmlLabel20.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
-            this.guna2HtmlLabel20.Size = new System.Drawing.Size(84, 17);
+            this.guna2HtmlLabel20.Size = new System.Drawing.Size(83, 17);
             this.guna2HtmlLabel20.TabIndex = 10;
             this.guna2HtmlLabel20.Text = "45535-0K010";
             // 
@@ -575,7 +575,7 @@
             this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2HtmlLabel13.Location = new System.Drawing.Point(18, 3);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(123, 25);
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(136, 24);
             this.guna2HtmlLabel13.TabIndex = 1;
             this.guna2HtmlLabel13.Text = "Stock Details";
             // 
@@ -617,7 +617,7 @@
             this.guna2HtmlLabel24.Location = new System.Drawing.Point(235, 88);
             this.guna2HtmlLabel24.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            this.guna2HtmlLabel24.Size = new System.Drawing.Size(70, 17);
+            this.guna2HtmlLabel24.Size = new System.Drawing.Size(69, 17);
             this.guna2HtmlLabel24.TabIndex = 17;
             this.guna2HtmlLabel24.Text = "Rs.1,475.00";
             // 
@@ -665,7 +665,7 @@
             this.guna2HtmlLabel28.Location = new System.Drawing.Point(18, 88);
             this.guna2HtmlLabel28.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel28.Name = "guna2HtmlLabel28";
-            this.guna2HtmlLabel28.Size = new System.Drawing.Size(73, 17);
+            this.guna2HtmlLabel28.Size = new System.Drawing.Size(74, 17);
             this.guna2HtmlLabel28.TabIndex = 13;
             this.guna2HtmlLabel28.Text = "Selling Price";
             // 
@@ -677,7 +677,7 @@
             this.guna2HtmlLabel29.Location = new System.Drawing.Point(18, 52);
             this.guna2HtmlLabel29.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel29.Name = "guna2HtmlLabel29";
-            this.guna2HtmlLabel29.Size = new System.Drawing.Size(74, 17);
+            this.guna2HtmlLabel29.Size = new System.Drawing.Size(75, 17);
             this.guna2HtmlLabel29.TabIndex = 12;
             this.guna2HtmlLabel29.Text = "Buying Price";
             // 
@@ -688,7 +688,7 @@
             this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2HtmlLabel23.Location = new System.Drawing.Point(18, 3);
             this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            this.guna2HtmlLabel23.Size = new System.Drawing.Size(134, 25);
+            this.guna2HtmlLabel23.Size = new System.Drawing.Size(150, 24);
             this.guna2HtmlLabel23.TabIndex = 2;
             this.guna2HtmlLabel23.Text = "Pricing Details";
             // 
@@ -779,7 +779,7 @@
             this.guna2HtmlLabel36.Location = new System.Drawing.Point(18, 88);
             this.guna2HtmlLabel36.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel36.Name = "guna2HtmlLabel36";
-            this.guna2HtmlLabel36.Size = new System.Drawing.Size(82, 17);
+            this.guna2HtmlLabel36.Size = new System.Drawing.Size(83, 17);
             this.guna2HtmlLabel36.TabIndex = 13;
             this.guna2HtmlLabel36.Text = "Supplier email";
             // 
@@ -791,7 +791,7 @@
             this.guna2HtmlLabel30.Location = new System.Drawing.Point(18, 52);
             this.guna2HtmlLabel30.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.guna2HtmlLabel30.Name = "guna2HtmlLabel30";
-            this.guna2HtmlLabel30.Size = new System.Drawing.Size(83, 17);
+            this.guna2HtmlLabel30.Size = new System.Drawing.Size(84, 17);
             this.guna2HtmlLabel30.TabIndex = 12;
             this.guna2HtmlLabel30.Text = "Supplier name";
             // 
@@ -802,7 +802,7 @@
             this.guna2HtmlLabel31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2HtmlLabel31.Location = new System.Drawing.Point(18, 3);
             this.guna2HtmlLabel31.Name = "guna2HtmlLabel31";
-            this.guna2HtmlLabel31.Size = new System.Drawing.Size(146, 25);
+            this.guna2HtmlLabel31.Size = new System.Drawing.Size(163, 24);
             this.guna2HtmlLabel31.TabIndex = 2;
             this.guna2HtmlLabel31.Text = "Supplier Details";
             // 
@@ -879,7 +879,7 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(3, 3);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(103, 25);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(112, 24);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "YB03-1001";
             // 
@@ -887,7 +887,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(26)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1054, 631);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "ItemDetailsView";

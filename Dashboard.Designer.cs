@@ -42,9 +42,9 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -296,15 +296,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1054, 47);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // pnlChildForm
-            // 
-            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(0, 47);
-            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(1054, 634);
-            this.pnlChildForm.TabIndex = 1;
-            // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
@@ -327,6 +318,16 @@
             this.pictureBox1.Size = new System.Drawing.Size(47, 37);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // pnlChildForm
+            // 
+            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildForm.Location = new System.Drawing.Point(0, 47);
+            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.Padding = new System.Windows.Forms.Padding(20);
+            this.pnlChildForm.Size = new System.Drawing.Size(1054, 634);
+            this.pnlChildForm.TabIndex = 1;
             // 
             // Dashboard
             // 
