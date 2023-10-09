@@ -109,6 +109,7 @@
             this.txtContactNumber.PasswordChar = '\0';
             this.txtContactNumber.PlaceholderText = "";
             this.txtContactNumber.SelectedText = "";
+            this.txtContactNumber.SelectionStart = 24;
             this.txtContactNumber.ShadowDecoration.Parent = this.txtContactNumber;
             this.txtContactNumber.Size = new System.Drawing.Size(229, 36);
             this.txtContactNumber.TabIndex = 5;
@@ -139,6 +140,7 @@
             this.txtCity.PasswordChar = '\0';
             this.txtCity.PlaceholderText = "";
             this.txtCity.SelectedText = "";
+            this.txtCity.SelectionStart = 14;
             this.txtCity.ShadowDecoration.Parent = this.txtCity;
             this.txtCity.Size = new System.Drawing.Size(229, 36);
             this.txtCity.TabIndex = 4;
@@ -212,7 +214,7 @@
             this.txtCustomerId.BorderRadius = 6;
             this.txtCustomerId.BorderThickness = 0;
             this.txtCustomerId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCustomerId.DefaultText = "Enter Customer ID";
+            this.txtCustomerId.DefaultText = "";
             this.txtCustomerId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtCustomerId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtCustomerId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -229,9 +231,9 @@
             this.txtCustomerId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
             this.txtCustomerId.Name = "txtCustomerId";
             this.txtCustomerId.PasswordChar = '\0';
-            this.txtCustomerId.PlaceholderText = "";
+            this.txtCustomerId.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.txtCustomerId.PlaceholderText = "Enter Customer ID";
             this.txtCustomerId.SelectedText = "";
-            this.txtCustomerId.SelectionStart = 17;
             this.txtCustomerId.ShadowDecoration.Parent = this.txtCustomerId;
             this.txtCustomerId.Size = new System.Drawing.Size(229, 36);
             this.txtCustomerId.TabIndex = 1;
