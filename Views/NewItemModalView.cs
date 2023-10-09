@@ -16,5 +16,10 @@ namespace inventory_management_system_kap.Views
         {
             InitializeComponent();
         }
+
+        private void imgBtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

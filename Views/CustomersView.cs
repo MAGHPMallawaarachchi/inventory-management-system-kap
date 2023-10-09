@@ -28,5 +28,11 @@ namespace inventory_management_system_kap.Views
         {
             UIHelper.UpdatePanelRegion(pnlCustomers);
         }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            NewCustomerModalView newCustomerModalView = new NewCustomerModalView();
+            newCustomerModalView.ShowDialog();
+        }
     }
 }

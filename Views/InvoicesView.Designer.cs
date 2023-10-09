@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
@@ -52,6 +53,7 @@
             this.dueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pnlChildForm.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.pnlInvoices.SuspendLayout();
@@ -60,6 +62,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvoices)).BeginInit();
             this.SuspendLayout();
             // 
+            // pnlChildForm
+            // 
+            this.pnlChildForm.Controls.Add(this.tableLayoutPanel1);
+            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildForm.Location = new System.Drawing.Point(0, 0);
+            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.Size = new System.Drawing.Size(1054, 631);
+            this.pnlChildForm.TabIndex = 0;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -67,14 +79,14 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.pnlInvoices, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 20);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1014, 591);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1054, 631);
+            this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
             // 
@@ -86,11 +98,11 @@
             this.tableLayoutPanel2.Controls.Add(this.lblPageNumber, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnPrevious, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 552);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 592);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1008, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1048, 36);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // btnNext
@@ -106,10 +118,10 @@
             this.btnNext.Font = new System.Drawing.Font("Inter", 10F);
             this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.btnNext.HoverState.Parent = this.btnNext;
-            this.btnNext.Location = new System.Drawing.Point(909, 3);
+            this.btnNext.Location = new System.Drawing.Point(945, 3);
             this.btnNext.Name = "btnNext";
             this.btnNext.ShadowDecoration.Parent = this.btnNext;
-            this.btnNext.Size = new System.Drawing.Size(96, 30);
+            this.btnNext.Size = new System.Drawing.Size(100, 30);
             this.btnNext.TabIndex = 9;
             this.btnNext.Text = "Next";
             // 
@@ -119,9 +131,9 @@
             this.lblPageNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPageNumber.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPageNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.lblPageNumber.Location = new System.Drawing.Point(103, 0);
+            this.lblPageNumber.Location = new System.Drawing.Point(107, 0);
             this.lblPageNumber.Name = "lblPageNumber";
-            this.lblPageNumber.Size = new System.Drawing.Size(800, 36);
+            this.lblPageNumber.Size = new System.Drawing.Size(832, 36);
             this.lblPageNumber.TabIndex = 6;
             this.lblPageNumber.Text = "1 Of 10";
             this.lblPageNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,7 +154,7 @@
             this.btnPrevious.Location = new System.Drawing.Point(3, 3);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.ShadowDecoration.Parent = this.btnPrevious;
-            this.btnPrevious.Size = new System.Drawing.Size(94, 30);
+            this.btnPrevious.Size = new System.Drawing.Size(98, 30);
             this.btnPrevious.TabIndex = 8;
             this.btnPrevious.Text = "Previous";
             // 
@@ -154,10 +166,9 @@
             this.pnlInvoices.Location = new System.Drawing.Point(0, 0);
             this.pnlInvoices.Margin = new System.Windows.Forms.Padding(0, 0, 0, 15);
             this.pnlInvoices.Name = "pnlInvoices";
-            this.pnlInvoices.Padding = new System.Windows.Forms.Padding(15);
-            this.pnlInvoices.Size = new System.Drawing.Size(1014, 534);
+            this.pnlInvoices.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pnlInvoices.Size = new System.Drawing.Size(1054, 574);
             this.pnlInvoices.TabIndex = 1;
-            this.pnlInvoices.SizeChanged += new System.EventHandler(this.pnlInvoices_SizeChanged);
             // 
             // tableLayoutPanel13
             // 
@@ -172,7 +183,7 @@
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 99.99999F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(984, 504);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(1024, 544);
             this.tableLayoutPanel13.TabIndex = 4;
             // 
             // tableLayoutPanel14
@@ -193,7 +204,7 @@
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(984, 29);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(1024, 29);
             this.tableLayoutPanel14.TabIndex = 1;
             // 
             // txtSearchBar
@@ -218,7 +229,7 @@
             this.txtSearchBar.IconLeft = global::inventory_management_system_kap.Properties.Resources.search;
             this.txtSearchBar.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtSearchBar.IconLeftSize = new System.Drawing.Size(14, 14);
-            this.txtSearchBar.Location = new System.Drawing.Point(492, 0);
+            this.txtSearchBar.Location = new System.Drawing.Point(512, 0);
             this.txtSearchBar.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.txtSearchBar.Name = "txtSearchBar";
             this.txtSearchBar.PasswordChar = '\0';
@@ -226,7 +237,7 @@
             this.txtSearchBar.PlaceholderText = "Search here...";
             this.txtSearchBar.SelectedText = "";
             this.txtSearchBar.ShadowDecoration.Parent = this.txtSearchBar;
-            this.txtSearchBar.Size = new System.Drawing.Size(259, 29);
+            this.txtSearchBar.Size = new System.Drawing.Size(270, 29);
             this.txtSearchBar.TabIndex = 22;
             this.txtSearchBar.TextOffset = new System.Drawing.Point(5, 0);
             // 
@@ -238,7 +249,7 @@
             this.lblInvoicesHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.lblInvoicesHeading.Location = new System.Drawing.Point(3, 0);
             this.lblInvoicesHeading.Name = "lblInvoicesHeading";
-            this.lblInvoicesHeading.Size = new System.Drawing.Size(479, 29);
+            this.lblInvoicesHeading.Size = new System.Drawing.Size(499, 29);
             this.lblInvoicesHeading.TabIndex = 2;
             this.lblInvoicesHeading.Text = "Invoices";
             this.lblInvoicesHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -257,12 +268,12 @@
             this.btnFilter.HoverState.Parent = this.btnFilter;
             this.btnFilter.Image = global::inventory_management_system_kap.Properties.Resources.Filter;
             this.btnFilter.ImageSize = new System.Drawing.Size(14, 14);
-            this.btnFilter.Location = new System.Drawing.Point(763, 0);
+            this.btnFilter.Location = new System.Drawing.Point(794, 0);
             this.btnFilter.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.btnFilter.ShadowDecoration.Parent = this.btnFilter;
-            this.btnFilter.Size = new System.Drawing.Size(71, 29);
+            this.btnFilter.Size = new System.Drawing.Size(74, 29);
             this.btnFilter.TabIndex = 23;
             this.btnFilter.Text = "Filter";
             // 
@@ -281,33 +292,34 @@
             this.btnAddInvoice.HoverState.Parent = this.btnAddInvoice;
             this.btnAddInvoice.Image = global::inventory_management_system_kap.Properties.Resources.Add;
             this.btnAddInvoice.ImageSize = new System.Drawing.Size(14, 14);
-            this.btnAddInvoice.Location = new System.Drawing.Point(844, 0);
+            this.btnAddInvoice.Location = new System.Drawing.Point(878, 0);
             this.btnAddInvoice.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnAddInvoice.Name = "btnAddInvoice";
             this.btnAddInvoice.ShadowDecoration.Parent = this.btnAddInvoice;
-            this.btnAddInvoice.Size = new System.Drawing.Size(135, 29);
+            this.btnAddInvoice.Size = new System.Drawing.Size(141, 29);
             this.btnAddInvoice.TabIndex = 24;
             this.btnAddInvoice.Text = "Add Invoice";
+            this.btnAddInvoice.Click += new System.EventHandler(this.btnAddInvoice_Click);
             // 
             // dgvInvoices
             // 
             this.dgvInvoices.AllowUserToAddRows = false;
             this.dgvInvoices.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.dgvInvoices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgvInvoices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvInvoices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInvoices.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.dgvInvoices.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvInvoices.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvInvoices.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInvoices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Inter", 10F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInvoices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvInvoices.ColumnHeadersHeight = 18;
             this.dgvInvoices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.number,
@@ -318,14 +330,14 @@
             this.dueDate,
             this.paymentStatus,
             this.status});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvInvoices.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Inter", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInvoices.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvInvoices.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvInvoices.EnableHeadersVisualStyles = false;
             this.dgvInvoices.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
@@ -334,8 +346,9 @@
             this.dgvInvoices.Name = "dgvInvoices";
             this.dgvInvoices.ReadOnly = true;
             this.dgvInvoices.RowHeadersVisible = false;
+            this.dgvInvoices.RowHeadersWidth = 51;
             this.dgvInvoices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInvoices.Size = new System.Drawing.Size(984, 460);
+            this.dgvInvoices.Size = new System.Drawing.Size(1024, 500);
             this.dgvInvoices.TabIndex = 2;
             this.dgvInvoices.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgvInvoices.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -364,6 +377,7 @@
             // 
             this.number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.number.HeaderText = "No.";
+            this.number.MinimumWidth = 6;
             this.number.Name = "number";
             this.number.ReadOnly = true;
             this.number.Width = 53;
@@ -372,6 +386,7 @@
             // 
             this.invoiceNo.FillWeight = 72.59702F;
             this.invoiceNo.HeaderText = "Invoice No.";
+            this.invoiceNo.MinimumWidth = 6;
             this.invoiceNo.Name = "invoiceNo";
             this.invoiceNo.ReadOnly = true;
             // 
@@ -379,6 +394,7 @@
             // 
             this.customer.FillWeight = 72.59702F;
             this.customer.HeaderText = "Customer";
+            this.customer.MinimumWidth = 6;
             this.customer.Name = "customer";
             this.customer.ReadOnly = true;
             // 
@@ -386,6 +402,7 @@
             // 
             this.date.FillWeight = 72.59702F;
             this.date.HeaderText = "Date";
+            this.date.MinimumWidth = 6;
             this.date.Name = "date";
             this.date.ReadOnly = true;
             // 
@@ -393,6 +410,7 @@
             // 
             this.paymentType.FillWeight = 72.59702F;
             this.paymentType.HeaderText = "Payment Type";
+            this.paymentType.MinimumWidth = 6;
             this.paymentType.Name = "paymentType";
             this.paymentType.ReadOnly = true;
             // 
@@ -400,6 +418,7 @@
             // 
             this.dueDate.FillWeight = 72.59702F;
             this.dueDate.HeaderText = "Due Date";
+            this.dueDate.MinimumWidth = 6;
             this.dueDate.Name = "dueDate";
             this.dueDate.ReadOnly = true;
             // 
@@ -408,6 +427,7 @@
             this.paymentStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.paymentStatus.FillWeight = 95.59032F;
             this.paymentStatus.HeaderText = "Payment Status";
+            this.paymentStatus.MinimumWidth = 6;
             this.paymentStatus.Name = "paymentStatus";
             this.paymentStatus.ReadOnly = true;
             this.paymentStatus.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -418,9 +438,10 @@
             this.status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.status.FillWeight = 246.8299F;
             this.status.HeaderText = "";
+            this.status.MinimumWidth = 6;
             this.status.Name = "status";
             this.status.ReadOnly = true;
-            this.status.Width = 5;
+            this.status.Width = 6;
             // 
             // InvoicesView
             // 
@@ -428,11 +449,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(1054, 631);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.pnlChildForm);
             this.Name = "InvoicesView";
-            this.Padding = new System.Windows.Forms.Padding(20);
             this.Text = "InvoicesView";
             this.Load += new System.EventHandler(this.InvoicesView_Load);
+            this.pnlChildForm.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -447,6 +468,7 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel pnlChildForm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2Button btnNext;
