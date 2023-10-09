@@ -31,20 +31,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInvoices = new Guna.UI2.WinForms.Guna2Button();
             this.btnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomers = new Guna.UI2.WinForms.Guna2Button();
-            this.btnInvoices = new Guna.UI2.WinForms.Guna2Button();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlChildForm = new System.Windows.Forms.Panel();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.pnlMain.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,29 +78,6 @@
             this.panel2.Size = new System.Drawing.Size(170, 641);
             this.panel2.TabIndex = 0;
             // 
-            // pbLogo
-            // 
-            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.InitialImage = null;
-            this.pbLogo.Location = new System.Drawing.Point(12, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.pbLogo.Size = new System.Drawing.Size(146, 65);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
-            // 
-            // pnlChildForm
-            // 
-            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(210, 0);
-            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(1054, 681);
-            this.pnlChildForm.TabIndex = 1;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -106,6 +92,48 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(146, 576);
             this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BorderRadius = 6;
+            this.btnLogout.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnLogout.CheckedState.Parent = this.btnLogout;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.CustomImages.Parent = this.btnLogout;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnLogout.Font = new System.Drawing.Font("Inter", 11F);
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnLogout.HoverState.Parent = this.btnLogout;
+            this.btnLogout.Image = global::inventory_management_system_kap.Properties.Resources.Logout;
+            this.btnLogout.Location = new System.Drawing.Point(3, 539);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
+            this.btnLogout.Size = new System.Drawing.Size(140, 34);
+            this.btnLogout.TabIndex = 12;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextOffset = new System.Drawing.Point(0, 1);
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.btnHome, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnInvoices, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.btnInventory, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btnCustomers, 0, 2);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 40);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0, 40, 0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 4;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(146, 248);
+            this.tableLayoutPanel3.TabIndex = 0;
             // 
             // btnHome
             // 
@@ -132,6 +160,32 @@
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.TextOffset = new System.Drawing.Point(0, 1);
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnInvoices
+            // 
+            this.btnInvoices.BorderRadius = 6;
+            this.btnInvoices.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnInvoices.CheckedState.Parent = this.btnInvoices;
+            this.btnInvoices.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInvoices.CustomImages.Parent = this.btnInvoices;
+            this.btnInvoices.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInvoices.FillColor = System.Drawing.Color.Transparent;
+            this.btnInvoices.Font = new System.Drawing.Font("Inter", 11F);
+            this.btnInvoices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
+            this.btnInvoices.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnInvoices.HoverState.Parent = this.btnInvoices;
+            this.btnInvoices.Image = global::inventory_management_system_kap.Properties.Resources.Invoices;
+            this.btnInvoices.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInvoices.Location = new System.Drawing.Point(0, 201);
+            this.btnInvoices.Margin = new System.Windows.Forms.Padding(0, 15, 0, 15);
+            this.btnInvoices.Name = "btnInvoices";
+            this.btnInvoices.ShadowDecoration.Parent = this.btnInvoices;
+            this.btnInvoices.Size = new System.Drawing.Size(146, 32);
+            this.btnInvoices.TabIndex = 9;
+            this.btnInvoices.Text = "Invoices";
+            this.btnInvoices.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInvoices.TextOffset = new System.Drawing.Point(0, 1);
+            this.btnInvoices.Click += new System.EventHandler(this.btnInvoices_Click);
             // 
             // btnInventory
             // 
@@ -185,73 +239,94 @@
             this.btnCustomers.TextOffset = new System.Drawing.Point(0, 1);
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
-            // btnInvoices
+            // pbLogo
             // 
-            this.btnInvoices.BorderRadius = 6;
-            this.btnInvoices.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnInvoices.CheckedState.Parent = this.btnInvoices;
-            this.btnInvoices.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInvoices.CustomImages.Parent = this.btnInvoices;
-            this.btnInvoices.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnInvoices.FillColor = System.Drawing.Color.Transparent;
-            this.btnInvoices.Font = new System.Drawing.Font("Inter", 11F);
-            this.btnInvoices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.btnInvoices.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnInvoices.HoverState.Parent = this.btnInvoices;
-            this.btnInvoices.Image = global::inventory_management_system_kap.Properties.Resources.Invoices;
-            this.btnInvoices.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnInvoices.Location = new System.Drawing.Point(0, 201);
-            this.btnInvoices.Margin = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.btnInvoices.Name = "btnInvoices";
-            this.btnInvoices.ShadowDecoration.Parent = this.btnInvoices;
-            this.btnInvoices.Size = new System.Drawing.Size(146, 32);
-            this.btnInvoices.TabIndex = 9;
-            this.btnInvoices.Text = "Invoices";
-            this.btnInvoices.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnInvoices.TextOffset = new System.Drawing.Point(0, 1);
-            this.btnInvoices.Click += new System.EventHandler(this.btnInvoices_Click);
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.InitialImage = null;
+            this.pbLogo.Location = new System.Drawing.Point(12, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.pbLogo.Size = new System.Drawing.Size(146, 65);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
             // 
-            // tableLayoutPanel3
+            // pnlMain
             // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.btnHome, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.btnInvoices, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.btnInventory, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.btnCustomers, 0, 2);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 40);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0, 40, 0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(146, 248);
-            this.tableLayoutPanel3.TabIndex = 0;
+            this.pnlMain.Controls.Add(this.tableLayoutPanel1);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(210, 0);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(1054, 681);
+            this.pnlMain.TabIndex = 1;
             // 
-            // btnLogout
+            // tableLayoutPanel1
             // 
-            this.btnLogout.BorderRadius = 6;
-            this.btnLogout.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnLogout.CheckedState.Parent = this.btnLogout;
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.CustomImages.Parent = this.btnLogout;
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnLogout.Font = new System.Drawing.Font("Inter", 11F);
-            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
-            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.btnLogout.HoverState.Parent = this.btnLogout;
-            this.btnLogout.Image = global::inventory_management_system_kap.Properties.Resources.Logout;
-            this.btnLogout.Location = new System.Drawing.Point(3, 539);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
-            this.btnLogout.Size = new System.Drawing.Size(140, 34);
-            this.btnLogout.TabIndex = 12;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.TextOffset = new System.Drawing.Point(0, 1);
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pnlChildForm, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.901615F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.09838F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1054, 681);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.87096F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.129032F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.tableLayoutPanel4.Controls.Add(this.lblUsername, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1054, 47);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // pnlChildForm
+            // 
+            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildForm.Location = new System.Drawing.Point(0, 47);
+            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.Size = new System.Drawing.Size(1054, 634);
+            this.pnlChildForm.TabIndex = 1;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblUsername.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblUsername.Location = new System.Drawing.Point(933, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(118, 47);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(878, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 37);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
@@ -259,7 +334,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.pnlChildForm);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -269,9 +344,14 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.pnlMain.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,7 +361,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel pnlChildForm;
+        private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private Guna.UI2.WinForms.Guna2Button btnInvoices;
@@ -289,6 +369,11 @@
         private Guna.UI2.WinForms.Guna2Button btnInventory;
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Panel pnlChildForm;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
