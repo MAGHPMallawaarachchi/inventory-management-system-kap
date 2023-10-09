@@ -288,6 +288,7 @@
             this.btnAddCustomer.Size = new System.Drawing.Size(141, 29);
             this.btnAddCustomer.TabIndex = 24;
             this.btnAddCustomer.Text = "Add Customer";
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // dgvCustomers
             // 
