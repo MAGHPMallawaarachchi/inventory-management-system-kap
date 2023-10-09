@@ -30,10 +30,10 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlQuickActions = new System.Windows.Forms.Panel();
+            this.pnlSalesOverview = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlTopSellingItems = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblSalesOverview = new System.Windows.Forms.Label();
@@ -62,10 +62,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlQuickActions.SuspendLayout();
+            this.pnlSalesOverview.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnlTopSellingItems.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -88,7 +88,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnlTopSellingItems, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -104,8 +104,8 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pnlQuickActions, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pnlSalesOverview, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -116,29 +116,31 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(527, 315);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // panel1
+            // pnlQuickActions
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.panel1.Controls.Add(this.tableLayoutPanel4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(517, 147);
-            this.panel1.TabIndex = 0;
+            this.pnlQuickActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.pnlQuickActions.Controls.Add(this.tableLayoutPanel4);
+            this.pnlQuickActions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlQuickActions.Location = new System.Drawing.Point(0, 0);
+            this.pnlQuickActions.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
+            this.pnlQuickActions.Name = "pnlQuickActions";
+            this.pnlQuickActions.Padding = new System.Windows.Forms.Padding(10);
+            this.pnlQuickActions.Size = new System.Drawing.Size(517, 147);
+            this.pnlQuickActions.TabIndex = 0;
+            this.pnlQuickActions.SizeChanged += new System.EventHandler(this.pnlQuickActions_SizeChanged);
             // 
-            // panel2
+            // pnlSalesOverview
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.panel2.Controls.Add(this.tableLayoutPanel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 167);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0, 10, 10, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(517, 138);
-            this.panel2.TabIndex = 1;
+            this.pnlSalesOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.pnlSalesOverview.Controls.Add(this.tableLayoutPanel3);
+            this.pnlSalesOverview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSalesOverview.Location = new System.Drawing.Point(0, 167);
+            this.pnlSalesOverview.Margin = new System.Windows.Forms.Padding(0, 10, 10, 10);
+            this.pnlSalesOverview.Name = "pnlSalesOverview";
+            this.pnlSalesOverview.Padding = new System.Windows.Forms.Padding(10);
+            this.pnlSalesOverview.Size = new System.Drawing.Size(517, 138);
+            this.pnlSalesOverview.TabIndex = 1;
+            this.pnlSalesOverview.SizeChanged += new System.EventHandler(this.pnlSalesOverview_SizeChanged);
             // 
             // panel3
             // 
@@ -151,18 +153,20 @@
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
             this.panel3.Size = new System.Drawing.Size(517, 305);
             this.panel3.TabIndex = 1;
+            this.panel3.SizeChanged += new System.EventHandler(this.panel3_SizeChanged);
             // 
-            // panel4
+            // pnlTopSellingItems
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.panel4.Controls.Add(this.tableLayoutPanel5);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 325);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0, 10, 10, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(10);
-            this.panel4.Size = new System.Drawing.Size(517, 306);
-            this.panel4.TabIndex = 2;
+            this.pnlTopSellingItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.pnlTopSellingItems.Controls.Add(this.tableLayoutPanel5);
+            this.pnlTopSellingItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTopSellingItems.Location = new System.Drawing.Point(0, 325);
+            this.pnlTopSellingItems.Margin = new System.Windows.Forms.Padding(0, 10, 10, 0);
+            this.pnlTopSellingItems.Name = "pnlTopSellingItems";
+            this.pnlTopSellingItems.Padding = new System.Windows.Forms.Padding(10);
+            this.pnlTopSellingItems.Size = new System.Drawing.Size(517, 306);
+            this.pnlTopSellingItems.TabIndex = 2;
+            this.pnlTopSellingItems.SizeChanged += new System.EventHandler(this.pnlTopSellingItems_SizeChanged);
             // 
             // panel5
             // 
@@ -175,6 +179,7 @@
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
             this.panel5.Size = new System.Drawing.Size(517, 306);
             this.panel5.TabIndex = 3;
+            this.panel5.SizeChanged += new System.EventHandler(this.panel5_SizeChanged);
             // 
             // tableLayoutPanel3
             // 
@@ -549,12 +554,13 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "HomeView";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.HomeView_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.pnlQuickActions.ResumeLayout(false);
+            this.pnlSalesOverview.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.pnlTopSellingItems.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -583,10 +589,10 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlQuickActions;
+        private System.Windows.Forms.Panel pnlSalesOverview;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlTopSellingItems;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
