@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewItemModalView));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.nudQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSupplier = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBuyingPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,20 +51,17 @@
             this.lblOemNumber = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPartNumber = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.imgBtnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblHeading = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cmbBrand = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.nudQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -98,6 +98,80 @@
             this.guna2Panel5.Size = new System.Drawing.Size(254, 484);
             this.guna2Panel5.TabIndex = 3;
             // 
+            // cmbCategory
+            // 
+            this.cmbCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategory.BorderColor = System.Drawing.Color.Transparent;
+            this.cmbCategory.BorderRadius = 6;
+            this.cmbCategory.BorderThickness = 0;
+            this.cmbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.cmbCategory.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbCategory.FocusedState.Parent = this.cmbCategory;
+            this.cmbCategory.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.HoverState.Parent = this.cmbCategory;
+            this.cmbCategory.ItemHeight = 30;
+            this.cmbCategory.ItemsAppearance.Parent = this.cmbCategory;
+            this.cmbCategory.Location = new System.Drawing.Point(8, 168);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.ShadowDecoration.Parent = this.cmbCategory;
+            this.cmbCategory.Size = new System.Drawing.Size(229, 36);
+            this.cmbCategory.TabIndex = 9;
+            // 
+            // nudQuantity
+            // 
+            this.nudQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.nudQuantity.BorderColor = System.Drawing.Color.Transparent;
+            this.nudQuantity.BorderRadius = 6;
+            this.nudQuantity.BorderThickness = 0;
+            this.nudQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nudQuantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nudQuantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nudQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nudQuantity.DisabledState.Parent = this.nudQuantity;
+            this.nudQuantity.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.nudQuantity.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.nudQuantity.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.nudQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nudQuantity.FocusedState.Parent = this.nudQuantity;
+            this.nudQuantity.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.nudQuantity.Location = new System.Drawing.Point(8, 384);
+            this.nudQuantity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.nudQuantity.Name = "nudQuantity";
+            this.nudQuantity.ShadowDecoration.Parent = this.nudQuantity;
+            this.nudQuantity.Size = new System.Drawing.Size(229, 36);
+            this.nudQuantity.TabIndex = 8;
+            this.nudQuantity.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            // 
+            // cmbBrand
+            // 
+            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
+            this.cmbBrand.BorderColor = System.Drawing.Color.Transparent;
+            this.cmbBrand.BorderRadius = 6;
+            this.cmbBrand.BorderThickness = 0;
+            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBrand.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbBrand.FocusedState.Parent = this.cmbBrand;
+            this.cmbBrand.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.cmbBrand.FormattingEnabled = true;
+            this.cmbBrand.HoverState.Parent = this.cmbBrand;
+            this.cmbBrand.ItemHeight = 30;
+            this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
+            this.cmbBrand.Location = new System.Drawing.Point(8, 222);
+            this.cmbBrand.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.cmbBrand.Name = "cmbBrand";
+            this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
+            this.cmbBrand.Size = new System.Drawing.Size(229, 36);
+            this.cmbBrand.TabIndex = 7;
+            // 
             // txtSupplier
             // 
             this.txtSupplier.BackColor = System.Drawing.Color.Transparent;
@@ -114,7 +188,7 @@
             this.txtSupplier.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.txtSupplier.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSupplier.FocusedState.Parent = this.txtSupplier;
-            this.txtSupplier.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplier.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.txtSupplier.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSupplier.HoverState.Parent = this.txtSupplier;
@@ -124,6 +198,7 @@
             this.txtSupplier.PasswordChar = '\0';
             this.txtSupplier.PlaceholderText = "";
             this.txtSupplier.SelectedText = "";
+            this.txtSupplier.SelectionStart = 14;
             this.txtSupplier.ShadowDecoration.Parent = this.txtSupplier;
             this.txtSupplier.Size = new System.Drawing.Size(229, 36);
             this.txtSupplier.TabIndex = 6;
@@ -144,7 +219,7 @@
             this.txtUnitPrice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.txtUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUnitPrice.FocusedState.Parent = this.txtUnitPrice;
-            this.txtUnitPrice.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitPrice.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUnitPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.txtUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUnitPrice.HoverState.Parent = this.txtUnitPrice;
@@ -154,6 +229,7 @@
             this.txtUnitPrice.PasswordChar = '\0';
             this.txtUnitPrice.PlaceholderText = "";
             this.txtUnitPrice.SelectedText = "";
+            this.txtUnitPrice.SelectionStart = 16;
             this.txtUnitPrice.ShadowDecoration.Parent = this.txtUnitPrice;
             this.txtUnitPrice.Size = new System.Drawing.Size(229, 36);
             this.txtUnitPrice.TabIndex = 5;
@@ -174,7 +250,7 @@
             this.txtBuyingPrice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.txtBuyingPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBuyingPrice.FocusedState.Parent = this.txtBuyingPrice;
-            this.txtBuyingPrice.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuyingPrice.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuyingPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.txtBuyingPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBuyingPrice.HoverState.Parent = this.txtBuyingPrice;
@@ -184,6 +260,7 @@
             this.txtBuyingPrice.PasswordChar = '\0';
             this.txtBuyingPrice.PlaceholderText = "";
             this.txtBuyingPrice.SelectedText = "";
+            this.txtBuyingPrice.SelectionStart = 18;
             this.txtBuyingPrice.ShadowDecoration.Parent = this.txtBuyingPrice;
             this.txtBuyingPrice.Size = new System.Drawing.Size(229, 36);
             this.txtBuyingPrice.TabIndex = 4;
@@ -204,7 +281,7 @@
             this.txtDescription.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.txtDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescription.FocusedState.Parent = this.txtDescription;
-            this.txtDescription.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescription.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.txtDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescription.HoverState.Parent = this.txtDescription;
@@ -214,6 +291,7 @@
             this.txtDescription.PasswordChar = '\0';
             this.txtDescription.PlaceholderText = "";
             this.txtDescription.SelectedText = "";
+            this.txtDescription.SelectionStart = 17;
             this.txtDescription.ShadowDecoration.Parent = this.txtDescription;
             this.txtDescription.Size = new System.Drawing.Size(229, 36);
             this.txtDescription.TabIndex = 2;
@@ -234,7 +312,7 @@
             this.txtOemNumber.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.txtOemNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtOemNumber.FocusedState.Parent = this.txtOemNumber;
-            this.txtOemNumber.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOemNumber.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOemNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.txtOemNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtOemNumber.HoverState.Parent = this.txtOemNumber;
@@ -244,6 +322,7 @@
             this.txtOemNumber.PasswordChar = '\0';
             this.txtOemNumber.PlaceholderText = "";
             this.txtOemNumber.SelectedText = "";
+            this.txtOemNumber.SelectionStart = 16;
             this.txtOemNumber.ShadowDecoration.Parent = this.txtOemNumber;
             this.txtOemNumber.Size = new System.Drawing.Size(229, 36);
             this.txtOemNumber.TabIndex = 1;
@@ -264,7 +343,7 @@
             this.txtPartNumber.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.txtPartNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPartNumber.FocusedState.Parent = this.txtPartNumber;
-            this.txtPartNumber.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPartNumber.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPartNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.txtPartNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPartNumber.HoverState.Parent = this.txtPartNumber;
@@ -301,99 +380,99 @@
             // lblSupplier
             // 
             this.lblSupplier.BackColor = System.Drawing.Color.Transparent;
-            this.lblSupplier.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSupplier.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblSupplier.Location = new System.Drawing.Point(13, 449);
             this.lblSupplier.Name = "lblSupplier";
-            this.lblSupplier.Size = new System.Drawing.Size(63, 21);
+            this.lblSupplier.Size = new System.Drawing.Size(63, 20);
             this.lblSupplier.TabIndex = 10;
             this.lblSupplier.Text = "Supplier";
             // 
             // lblQuantity
             // 
             this.lblQuantity.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuantity.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblQuantity.Location = new System.Drawing.Point(13, 395);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(62, 21);
+            this.lblQuantity.Size = new System.Drawing.Size(62, 20);
             this.lblQuantity.TabIndex = 9;
             this.lblQuantity.Text = "Quantity";
             // 
             // lblUnitPrice
             // 
             this.lblUnitPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblUnitPrice.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPrice.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnitPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblUnitPrice.Location = new System.Drawing.Point(13, 341);
             this.lblUnitPrice.Name = "lblUnitPrice";
-            this.lblUnitPrice.Size = new System.Drawing.Size(73, 21);
+            this.lblUnitPrice.Size = new System.Drawing.Size(73, 20);
             this.lblUnitPrice.TabIndex = 8;
             this.lblUnitPrice.Text = "Unit Price";
             // 
             // lblBuyingPrice
             // 
             this.lblBuyingPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuyingPrice.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuyingPrice.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuyingPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblBuyingPrice.Location = new System.Drawing.Point(13, 287);
             this.lblBuyingPrice.Name = "lblBuyingPrice";
-            this.lblBuyingPrice.Size = new System.Drawing.Size(93, 21);
+            this.lblBuyingPrice.Size = new System.Drawing.Size(93, 20);
             this.lblBuyingPrice.TabIndex = 7;
             this.lblBuyingPrice.Text = "Buying Price";
             // 
             // lblBrand
             // 
             this.lblBrand.BackColor = System.Drawing.Color.Transparent;
-            this.lblBrand.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrand.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblBrand.Location = new System.Drawing.Point(13, 233);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(45, 21);
+            this.lblBrand.Size = new System.Drawing.Size(45, 20);
             this.lblBrand.TabIndex = 6;
             this.lblBrand.Text = "Brand";
             // 
             // lblCategory
             // 
             this.lblCategory.BackColor = System.Drawing.Color.Transparent;
-            this.lblCategory.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblCategory.Location = new System.Drawing.Point(13, 179);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(68, 21);
+            this.lblCategory.Size = new System.Drawing.Size(68, 20);
             this.lblCategory.TabIndex = 5;
             this.lblCategory.Text = "Category";
             // 
             // lblDescription
             // 
             this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescription.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblDescription.Location = new System.Drawing.Point(13, 125);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(85, 21);
+            this.lblDescription.Size = new System.Drawing.Size(85, 20);
             this.lblDescription.TabIndex = 4;
             this.lblDescription.Text = "Description";
             // 
             // lblOemNumber
             // 
             this.lblOemNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblOemNumber.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOemNumber.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOemNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblOemNumber.Location = new System.Drawing.Point(13, 71);
             this.lblOemNumber.Name = "lblOemNumber";
-            this.lblOemNumber.Size = new System.Drawing.Size(97, 21);
+            this.lblOemNumber.Size = new System.Drawing.Size(98, 20);
             this.lblOemNumber.TabIndex = 3;
             this.lblOemNumber.Text = "OEM Number";
             // 
             // lblPartNumber
             // 
             this.lblPartNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblPartNumber.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPartNumber.Font = new System.Drawing.Font("Inter", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPartNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
             this.lblPartNumber.Location = new System.Drawing.Point(13, 17);
             this.lblPartNumber.Name = "lblPartNumber";
-            this.lblPartNumber.Size = new System.Drawing.Size(93, 21);
+            this.lblPartNumber.Size = new System.Drawing.Size(93, 20);
             this.lblPartNumber.TabIndex = 2;
             this.lblPartNumber.Text = "Part Number";
             // 
@@ -408,6 +487,25 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(411, 52);
             this.guna2Panel3.TabIndex = 1;
+            // 
+            // btnClear
+            // 
+            this.btnClear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnClear.BorderRadius = 6;
+            this.btnClear.BorderThickness = 1;
+            this.btnClear.CheckedState.Parent = this.btnClear;
+            this.btnClear.CustomImages.Parent = this.btnClear;
+            this.btnClear.FillColor = System.Drawing.Color.Transparent;
+            this.btnClear.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnClear.HoverState.Parent = this.btnClear;
+            this.btnClear.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnClear.Location = new System.Drawing.Point(243, 21);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.ShadowDecoration.Parent = this.btnClear;
+            this.btnClear.Size = new System.Drawing.Size(58, 28);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear";
             // 
             // btnAddItem
             // 
@@ -458,102 +556,9 @@
             this.lblHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.lblHeading.Location = new System.Drawing.Point(11, 5);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(111, 31);
+            this.lblHeading.Size = new System.Drawing.Size(119, 31);
             this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "New Item";
-            // 
-            // cmbBrand
-            // 
-            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
-            this.cmbBrand.BorderColor = System.Drawing.Color.Transparent;
-            this.cmbBrand.BorderRadius = 6;
-            this.cmbBrand.BorderThickness = 0;
-            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBrand.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbBrand.FocusedState.Parent = this.cmbBrand;
-            this.cmbBrand.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.cmbBrand.FormattingEnabled = true;
-            this.cmbBrand.HoverState.Parent = this.cmbBrand;
-            this.cmbBrand.ItemHeight = 30;
-            this.cmbBrand.ItemsAppearance.Parent = this.cmbBrand;
-            this.cmbBrand.Location = new System.Drawing.Point(8, 222);
-            this.cmbBrand.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.cmbBrand.Name = "cmbBrand";
-            this.cmbBrand.ShadowDecoration.Parent = this.cmbBrand;
-            this.cmbBrand.Size = new System.Drawing.Size(229, 36);
-            this.cmbBrand.TabIndex = 7;
-            // 
-            // nudQuantity
-            // 
-            this.nudQuantity.BackColor = System.Drawing.Color.Transparent;
-            this.nudQuantity.BorderColor = System.Drawing.Color.Transparent;
-            this.nudQuantity.BorderRadius = 6;
-            this.nudQuantity.BorderThickness = 0;
-            this.nudQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nudQuantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.nudQuantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.nudQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nudQuantity.DisabledState.Parent = this.nudQuantity;
-            this.nudQuantity.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.nudQuantity.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.nudQuantity.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.nudQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nudQuantity.FocusedState.Parent = this.nudQuantity;
-            this.nudQuantity.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.nudQuantity.Location = new System.Drawing.Point(8, 384);
-            this.nudQuantity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.nudQuantity.Name = "nudQuantity";
-            this.nudQuantity.ShadowDecoration.Parent = this.nudQuantity;
-            this.nudQuantity.Size = new System.Drawing.Size(229, 36);
-            this.nudQuantity.TabIndex = 8;
-            this.nudQuantity.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            // 
-            // cmbCategory
-            // 
-            this.cmbCategory.BackColor = System.Drawing.Color.Transparent;
-            this.cmbCategory.BorderColor = System.Drawing.Color.Transparent;
-            this.cmbCategory.BorderRadius = 6;
-            this.cmbCategory.BorderThickness = 0;
-            this.cmbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.cmbCategory.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbCategory.FocusedState.Parent = this.cmbCategory;
-            this.cmbCategory.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.HoverState.Parent = this.cmbCategory;
-            this.cmbCategory.ItemHeight = 30;
-            this.cmbCategory.ItemsAppearance.Parent = this.cmbCategory;
-            this.cmbCategory.Location = new System.Drawing.Point(8, 168);
-            this.cmbCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.ShadowDecoration.Parent = this.cmbCategory;
-            this.cmbCategory.Size = new System.Drawing.Size(229, 36);
-            this.cmbCategory.TabIndex = 9;
-            // 
-            // btnClear
-            // 
-            this.btnClear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.btnClear.BorderRadius = 6;
-            this.btnClear.BorderThickness = 1;
-            this.btnClear.CheckedState.Parent = this.btnClear;
-            this.btnClear.CustomImages.Parent = this.btnClear;
-            this.btnClear.FillColor = System.Drawing.Color.Transparent;
-            this.btnClear.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.btnClear.HoverState.Parent = this.btnClear;
-            this.btnClear.ImageSize = new System.Drawing.Size(11, 11);
-            this.btnClear.Location = new System.Drawing.Point(243, 21);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.ShadowDecoration.Parent = this.btnClear;
-            this.btnClear.Size = new System.Drawing.Size(58, 28);
-            this.btnClear.TabIndex = 3;
-            this.btnClear.Text = "Clear";
             // 
             // NewItemModalView
             // 
@@ -568,12 +573,12 @@
             this.Text = "NewItemModalView";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
             this.ResumeLayout(false);
 
         }
