@@ -56,12 +56,17 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.imgBtnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblHeading = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnAddImage = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picAddImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAddImage)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -76,11 +81,13 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(15);
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(387, 591);
+            this.guna2Panel1.Size = new System.Drawing.Size(387, 686);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2Panel5
             // 
+            this.guna2Panel5.Controls.Add(this.picAddImage);
+            this.guna2Panel5.Controls.Add(this.btnAddImage);
             this.guna2Panel5.Controls.Add(this.cmbCategory);
             this.guna2Panel5.Controls.Add(this.nudQuantity);
             this.guna2Panel5.Controls.Add(this.cmbBrand);
@@ -95,7 +102,7 @@
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(238, 492);
+            this.guna2Panel5.Size = new System.Drawing.Size(238, 587);
             this.guna2Panel5.TabIndex = 3;
             // 
             // cmbCategory
@@ -356,6 +363,7 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel4.Controls.Add(this.lblSupplier);
             this.guna2Panel4.Controls.Add(this.lblQuantity);
             this.guna2Panel4.Controls.Add(this.lblUnitPrice);
@@ -370,7 +378,7 @@
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(117, 492);
+            this.guna2Panel4.Size = new System.Drawing.Size(117, 587);
             this.guna2Panel4.TabIndex = 2;
             // 
             // lblSupplier
@@ -477,7 +485,7 @@
             this.guna2Panel3.Controls.Add(this.btnClear);
             this.guna2Panel3.Controls.Add(this.btnAddItem);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel3.Location = new System.Drawing.Point(15, 542);
+            this.guna2Panel3.Location = new System.Drawing.Point(15, 637);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
@@ -560,16 +568,64 @@
             this.lblHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(235)))));
             this.lblHeading.Location = new System.Drawing.Point(0, 0);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(107, 27);
+            this.lblHeading.Size = new System.Drawing.Size(99, 35);
             this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "New Item";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btnAddImage
+            // 
+            this.btnAddImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddImage.BorderRadius = 6;
+            this.btnAddImage.CheckedState.Parent = this.btnAddImage;
+            this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddImage.CustomImages.Parent = this.btnAddImage;
+            this.btnAddImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.btnAddImage.Font = new System.Drawing.Font("Inter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddImage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnAddImage.HoverState.Parent = this.btnAddImage;
+            this.btnAddImage.Image = ((System.Drawing.Image)(resources.GetObject("btnAddImage.Image")));
+            this.btnAddImage.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnAddImage.Location = new System.Drawing.Point(8, 511);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.ShadowDecoration.Parent = this.btnAddImage;
+            this.btnAddImage.Size = new System.Drawing.Size(112, 36);
+            this.btnAddImage.TabIndex = 10;
+            this.btnAddImage.Text = "Add Image";
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Inter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(5, 522);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(71, 18);
+            this.guna2HtmlLabel1.TabIndex = 11;
+            this.guna2HtmlLabel1.Text = "Item Image";
+            // 
+            // picAddImage
+            // 
+            this.picAddImage.BackColor = System.Drawing.Color.Transparent;
+            this.picAddImage.BorderRadius = 6;
+            this.picAddImage.Location = new System.Drawing.Point(140, 492);
+            this.picAddImage.Name = "picAddImage";
+            this.picAddImage.ShadowDecoration.Parent = this.picAddImage;
+            this.picAddImage.Size = new System.Drawing.Size(95, 80);
+            this.picAddImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAddImage.TabIndex = 11;
+            this.picAddImage.TabStop = false;
             // 
             // NewItemModalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(387, 591);
+            this.ClientSize = new System.Drawing.Size(387, 686);
             this.ControlBox = false;
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Inter", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -587,6 +643,7 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAddImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -620,5 +677,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2ImageButton imgBtnClose;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHeading;
+        private Guna.UI2.WinForms.Guna2Button btnAddImage;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private Guna.UI2.WinForms.Guna2PictureBox picAddImage;
     }
 }
