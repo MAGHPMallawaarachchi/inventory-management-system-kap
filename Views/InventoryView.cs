@@ -24,5 +24,15 @@ namespace inventory_management_system_kap.Views
             UIHelper.UpdatePanelRegion(pnlInventorySummary);
             UIHelper.UpdatePanelRegion(pnlItems);
         }
+
+        private void pnlInventorySummary_SizeChanged(object sender, EventArgs e)
+        {
+            UIHelper.UpdatePanelRegion(pnlInventorySummary);
+        }
+
+        private void pnlItems_SizeChanged(object sender, EventArgs e)
+        {
+            UIHelper.UpdatePanelRegion(pnlItems);
+        }
     }
 }
