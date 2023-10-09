@@ -30,29 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewCustomerModalView));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtContactNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCity = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCustomerId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblContactNumber = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCity = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCustomerId = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddCustomer = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.imgBtnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblHeading = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblPartNumber = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtPartNumber = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -69,6 +69,291 @@
             this.guna2Panel1.Size = new System.Drawing.Size(441, 427);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.Controls.Add(this.txtContactNumber);
+            this.guna2Panel5.Controls.Add(this.txtCity);
+            this.guna2Panel5.Controls.Add(this.txtAddress);
+            this.guna2Panel5.Controls.Add(this.txtName);
+            this.guna2Panel5.Controls.Add(this.txtCustomerId);
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel5.Location = new System.Drawing.Point(172, 83);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(254, 277);
+            this.guna2Panel5.TabIndex = 3;
+            // 
+            // txtContactNumber
+            // 
+            this.txtContactNumber.BackColor = System.Drawing.Color.Transparent;
+            this.txtContactNumber.BorderColor = System.Drawing.Color.Transparent;
+            this.txtContactNumber.BorderRadius = 6;
+            this.txtContactNumber.BorderThickness = 0;
+            this.txtContactNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContactNumber.DefaultText = "Enter the Contact Number";
+            this.txtContactNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtContactNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtContactNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContactNumber.DisabledState.Parent = this.txtContactNumber;
+            this.txtContactNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContactNumber.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtContactNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContactNumber.FocusedState.Parent = this.txtContactNumber;
+            this.txtContactNumber.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.txtContactNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContactNumber.HoverState.Parent = this.txtContactNumber;
+            this.txtContactNumber.Location = new System.Drawing.Point(8, 222);
+            this.txtContactNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.txtContactNumber.Name = "txtContactNumber";
+            this.txtContactNumber.PasswordChar = '\0';
+            this.txtContactNumber.PlaceholderText = "";
+            this.txtContactNumber.SelectedText = "";
+            this.txtContactNumber.ShadowDecoration.Parent = this.txtContactNumber;
+            this.txtContactNumber.Size = new System.Drawing.Size(229, 36);
+            this.txtContactNumber.TabIndex = 5;
+            // 
+            // txtCity
+            // 
+            this.txtCity.BackColor = System.Drawing.Color.Transparent;
+            this.txtCity.BorderColor = System.Drawing.Color.Transparent;
+            this.txtCity.BorderRadius = 6;
+            this.txtCity.BorderThickness = 0;
+            this.txtCity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCity.DefaultText = "Enter the City";
+            this.txtCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCity.DisabledState.Parent = this.txtCity;
+            this.txtCity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCity.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtCity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCity.FocusedState.Parent = this.txtCity;
+            this.txtCity.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.txtCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCity.HoverState.Parent = this.txtCity;
+            this.txtCity.Location = new System.Drawing.Point(8, 168);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.PasswordChar = '\0';
+            this.txtCity.PlaceholderText = "";
+            this.txtCity.SelectedText = "";
+            this.txtCity.ShadowDecoration.Parent = this.txtCity;
+            this.txtCity.Size = new System.Drawing.Size(229, 36);
+            this.txtCity.TabIndex = 4;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.BackColor = System.Drawing.Color.Transparent;
+            this.txtAddress.BorderColor = System.Drawing.Color.Transparent;
+            this.txtAddress.BorderRadius = 6;
+            this.txtAddress.BorderThickness = 0;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.DefaultText = "Enter Address";
+            this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.DisabledState.Parent = this.txtAddress;
+            this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.FocusedState.Parent = this.txtAddress;
+            this.txtAddress.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.HoverState.Parent = this.txtAddress;
+            this.txtAddress.Location = new System.Drawing.Point(8, 114);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PasswordChar = '\0';
+            this.txtAddress.PlaceholderText = "";
+            this.txtAddress.SelectedText = "";
+            this.txtAddress.SelectionStart = 13;
+            this.txtAddress.ShadowDecoration.Parent = this.txtAddress;
+            this.txtAddress.Size = new System.Drawing.Size(229, 36);
+            this.txtAddress.TabIndex = 3;
+            // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.Color.Transparent;
+            this.txtName.BorderColor = System.Drawing.Color.Transparent;
+            this.txtName.BorderRadius = 6;
+            this.txtName.BorderThickness = 0;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.DefaultText = "Enter name";
+            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.DisabledState.Parent = this.txtName;
+            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.FocusedState.Parent = this.txtName;
+            this.txtName.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.HoverState.Parent = this.txtName;
+            this.txtName.Location = new System.Drawing.Point(8, 60);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PlaceholderText = "";
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionStart = 10;
+            this.txtName.ShadowDecoration.Parent = this.txtName;
+            this.txtName.Size = new System.Drawing.Size(229, 36);
+            this.txtName.TabIndex = 2;
+            // 
+            // txtCustomerId
+            // 
+            this.txtCustomerId.BackColor = System.Drawing.Color.Transparent;
+            this.txtCustomerId.BorderColor = System.Drawing.Color.Transparent;
+            this.txtCustomerId.BorderRadius = 6;
+            this.txtCustomerId.BorderThickness = 0;
+            this.txtCustomerId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCustomerId.DefaultText = "Enter Customer ID";
+            this.txtCustomerId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCustomerId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCustomerId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCustomerId.DisabledState.Parent = this.txtCustomerId;
+            this.txtCustomerId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCustomerId.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
+            this.txtCustomerId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCustomerId.FocusedState.Parent = this.txtCustomerId;
+            this.txtCustomerId.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.txtCustomerId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCustomerId.HoverState.Parent = this.txtCustomerId;
+            this.txtCustomerId.Location = new System.Drawing.Point(8, 6);
+            this.txtCustomerId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
+            this.txtCustomerId.Name = "txtCustomerId";
+            this.txtCustomerId.PasswordChar = '\0';
+            this.txtCustomerId.PlaceholderText = "";
+            this.txtCustomerId.SelectedText = "";
+            this.txtCustomerId.SelectionStart = 17;
+            this.txtCustomerId.ShadowDecoration.Parent = this.txtCustomerId;
+            this.txtCustomerId.Size = new System.Drawing.Size(229, 36);
+            this.txtCustomerId.TabIndex = 1;
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Controls.Add(this.lblContactNumber);
+            this.guna2Panel4.Controls.Add(this.lblCity);
+            this.guna2Panel4.Controls.Add(this.lblAddress);
+            this.guna2Panel4.Controls.Add(this.lblName);
+            this.guna2Panel4.Controls.Add(this.lblCustomerId);
+            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel4.Location = new System.Drawing.Point(15, 83);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(157, 277);
+            this.guna2Panel4.TabIndex = 2;
+            // 
+            // lblContactNumber
+            // 
+            this.lblContactNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblContactNumber.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblContactNumber.Location = new System.Drawing.Point(13, 233);
+            this.lblContactNumber.Name = "lblContactNumber";
+            this.lblContactNumber.Size = new System.Drawing.Size(119, 21);
+            this.lblContactNumber.TabIndex = 7;
+            this.lblContactNumber.Text = "Contact Number";
+            // 
+            // lblCity
+            // 
+            this.lblCity.BackColor = System.Drawing.Color.Transparent;
+            this.lblCity.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblCity.Location = new System.Drawing.Point(13, 179);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(31, 21);
+            this.lblCity.TabIndex = 6;
+            this.lblCity.Text = "City";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblAddress.Location = new System.Drawing.Point(13, 125);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(62, 21);
+            this.lblAddress.TabIndex = 5;
+            this.lblAddress.Text = "Address";
+            // 
+            // lblName
+            // 
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblName.Location = new System.Drawing.Point(13, 71);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(44, 21);
+            this.lblName.TabIndex = 4;
+            this.lblName.Text = "Name";
+            // 
+            // lblCustomerId
+            // 
+            this.lblCustomerId.BackColor = System.Drawing.Color.Transparent;
+            this.lblCustomerId.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.lblCustomerId.Location = new System.Drawing.Point(13, 17);
+            this.lblCustomerId.Name = "lblCustomerId";
+            this.lblCustomerId.Size = new System.Drawing.Size(92, 21);
+            this.lblCustomerId.TabIndex = 3;
+            this.lblCustomerId.Text = "Customer ID";
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.btnClear);
+            this.guna2Panel3.Controls.Add(this.btnAddCustomer);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel3.Location = new System.Drawing.Point(15, 360);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(411, 52);
+            this.guna2Panel3.TabIndex = 1;
+            // 
+            // btnClear
+            // 
+            this.btnClear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.btnClear.BorderRadius = 6;
+            this.btnClear.BorderThickness = 1;
+            this.btnClear.CheckedState.Parent = this.btnClear;
+            this.btnClear.CustomImages.Parent = this.btnClear;
+            this.btnClear.FillColor = System.Drawing.Color.Transparent;
+            this.btnClear.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.HoverState.Parent = this.btnClear;
+            this.btnClear.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnClear.Location = new System.Drawing.Point(209, 11);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.ShadowDecoration.Parent = this.btnClear;
+            this.btnClear.Size = new System.Drawing.Size(58, 28);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Clear";
+            // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.BorderRadius = 6;
+            this.btnAddCustomer.CheckedState.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.CustomImages.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
+            this.btnAddCustomer.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnAddCustomer.HoverState.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.Image")));
+            this.btnAddCustomer.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnAddCustomer.Location = new System.Drawing.Point(273, 11);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.ShadowDecoration.Parent = this.btnAddCustomer;
+            this.btnAddCustomer.Size = new System.Drawing.Size(123, 28);
+            this.btnAddCustomer.TabIndex = 4;
+            this.btnAddCustomer.Text = "Add Customer";
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.imgBtnClose);
@@ -79,46 +364,6 @@
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(411, 68);
             this.guna2Panel2.TabIndex = 0;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.guna2Button1);
-            this.guna2Panel3.Controls.Add(this.btnAddItem);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel3.Location = new System.Drawing.Point(15, 360);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(411, 52);
-            this.guna2Panel3.TabIndex = 1;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel4.Controls.Add(this.lblPartNumber);
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel4.Location = new System.Drawing.Point(15, 83);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(157, 277);
-            this.guna2Panel4.TabIndex = 2;
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.Controls.Add(this.guna2TextBox4);
-            this.guna2Panel5.Controls.Add(this.guna2TextBox3);
-            this.guna2Panel5.Controls.Add(this.guna2TextBox2);
-            this.guna2Panel5.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel5.Controls.Add(this.txtPartNumber);
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel5.Location = new System.Drawing.Point(172, 83);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(254, 277);
-            this.guna2Panel5.TabIndex = 3;
             // 
             // imgBtnClose
             // 
@@ -143,248 +388,6 @@
             this.lblHeading.TabIndex = 2;
             this.lblHeading.Text = "New Customer";
             // 
-            // lblPartNumber
-            // 
-            this.lblPartNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblPartNumber.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPartNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.lblPartNumber.Location = new System.Drawing.Point(13, 17);
-            this.lblPartNumber.Name = "lblPartNumber";
-            this.lblPartNumber.Size = new System.Drawing.Size(92, 21);
-            this.lblPartNumber.TabIndex = 3;
-            this.lblPartNumber.Text = "Customer ID";
-            // 
-            // txtPartNumber
-            // 
-            this.txtPartNumber.BackColor = System.Drawing.Color.Transparent;
-            this.txtPartNumber.BorderColor = System.Drawing.Color.Transparent;
-            this.txtPartNumber.BorderRadius = 6;
-            this.txtPartNumber.BorderThickness = 0;
-            this.txtPartNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPartNumber.DefaultText = "Enter Customer ID";
-            this.txtPartNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPartNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPartNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPartNumber.DisabledState.Parent = this.txtPartNumber;
-            this.txtPartNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPartNumber.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.txtPartNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPartNumber.FocusedState.Parent = this.txtPartNumber;
-            this.txtPartNumber.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.txtPartNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPartNumber.HoverState.Parent = this.txtPartNumber;
-            this.txtPartNumber.Location = new System.Drawing.Point(8, 6);
-            this.txtPartNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.txtPartNumber.Name = "txtPartNumber";
-            this.txtPartNumber.PasswordChar = '\0';
-            this.txtPartNumber.PlaceholderText = "";
-            this.txtPartNumber.SelectedText = "";
-            this.txtPartNumber.ShadowDecoration.Parent = this.txtPartNumber;
-            this.txtPartNumber.Size = new System.Drawing.Size(229, 36);
-            this.txtPartNumber.TabIndex = 1;
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 6;
-            this.guna2TextBox1.BorderThickness = 0;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "Enter name";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(8, 60);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(229, 36);
-            this.guna2TextBox1.TabIndex = 2;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderRadius = 6;
-            this.guna2TextBox2.BorderThickness = 0;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "Enter Address";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(8, 114);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(229, 36);
-            this.guna2TextBox2.TabIndex = 3;
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox3.BorderRadius = 6;
-            this.guna2TextBox3.BorderThickness = 0;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "Select the category";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(8, 168);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(229, 36);
-            this.guna2TextBox3.TabIndex = 4;
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox4.BorderRadius = 6;
-            this.guna2TextBox4.BorderThickness = 0;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "Select the brand";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(8, 222);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 15);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(229, 36);
-            this.guna2TextBox4.TabIndex = 5;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(13, 71);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(44, 21);
-            this.guna2HtmlLabel1.TabIndex = 4;
-            this.guna2HtmlLabel1.Text = "Name";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(13, 125);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(62, 21);
-            this.guna2HtmlLabel2.TabIndex = 5;
-            this.guna2HtmlLabel2.Text = "Address";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(13, 179);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(31, 21);
-            this.guna2HtmlLabel3.TabIndex = 6;
-            this.guna2HtmlLabel3.Text = "City";
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(13, 233);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(119, 21);
-            this.guna2HtmlLabel4.TabIndex = 7;
-            this.guna2HtmlLabel4.Text = "Contact Number";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.guna2Button1.BorderRadius = 6;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(11, 11);
-            this.guna2Button1.Location = new System.Drawing.Point(209, 11);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(58, 28);
-            this.guna2Button1.TabIndex = 5;
-            this.guna2Button1.Text = "Clear";
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.BorderRadius = 6;
-            this.btnAddItem.CheckedState.Parent = this.btnAddItem;
-            this.btnAddItem.CustomImages.Parent = this.btnAddItem;
-            this.btnAddItem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(116)))), ((int)(((byte)(225)))));
-            this.btnAddItem.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItem.ForeColor = System.Drawing.Color.White;
-            this.btnAddItem.HoverState.Parent = this.btnAddItem;
-            this.btnAddItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAddItem.Image")));
-            this.btnAddItem.ImageSize = new System.Drawing.Size(11, 11);
-            this.btnAddItem.Location = new System.Drawing.Point(273, 11);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.ShadowDecoration.Parent = this.btnAddItem;
-            this.btnAddItem.Size = new System.Drawing.Size(123, 28);
-            this.btnAddItem.TabIndex = 4;
-            this.btnAddItem.Text = "Add Customer";
-            // 
             // NewCustomerModalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -395,12 +398,12 @@
             this.Name = "NewCustomerModalView";
             this.Text = "NewCustomerModalView";
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
-            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
-            this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -414,17 +417,17 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2ImageButton imgBtnClose;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHeading;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblPartNumber;
-        private Guna.UI2.WinForms.Guna2TextBox txtPartNumber;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button btnAddItem;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCustomerId;
+        private Guna.UI2.WinForms.Guna2TextBox txtCustomerId;
+        private Guna.UI2.WinForms.Guna2TextBox txtContactNumber;
+        private Guna.UI2.WinForms.Guna2TextBox txtCity;
+        private Guna.UI2.WinForms.Guna2TextBox txtAddress;
+        private Guna.UI2.WinForms.Guna2TextBox txtName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblContactNumber;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCity;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblAddress;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblName;
+        private Guna.UI2.WinForms.Guna2Button btnClear;
+        private Guna.UI2.WinForms.Guna2Button btnAddCustomer;
     }
 }
