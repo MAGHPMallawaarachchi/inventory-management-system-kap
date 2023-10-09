@@ -99,6 +99,12 @@
     <Compile Include="Views\ItemDetailsView.Designer.cs">
       <DependentUpon>ItemDetailsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\NewCustomerModalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewCustomerModalView.Designer.cs">
+      <DependentUpon>NewCustomerModalView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\NewItemModalView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ItemDetailsView.resx">
       <DependentUpon>ItemDetailsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewCustomerModalView.resx">
+      <DependentUpon>NewCustomerModalView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\NewItemModalView.resx">
       <DependentUpon>NewItemModalView.cs</DependentUpon>
