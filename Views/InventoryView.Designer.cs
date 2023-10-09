@@ -707,6 +707,7 @@
             this.btnAddItem.Size = new System.Drawing.Size(101, 29);
             this.btnAddItem.TabIndex = 24;
             this.btnAddItem.Text = "Add Item";
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // tableLayoutPanel2
             // 

@@ -34,5 +34,11 @@ namespace inventory_management_system_kap.Views
         {
             UIHelper.UpdatePanelRegion(pnlItems);
         }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+            NewItemModalView newItemModalView = new NewItemModalView();
+            newItemModalView.ShowDialog();
+        }
     }
 }
