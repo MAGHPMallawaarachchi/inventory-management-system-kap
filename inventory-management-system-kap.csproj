@@ -124,6 +124,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\AddInvoiceView.resx">
+      <DependentUpon>AddInvoiceView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomersView.resx">
       <DependentUpon>CustomersView.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +198,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\icons\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\AddCircl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
